@@ -53,9 +53,37 @@ Going from a smart city to a responsive city means putting more minute-to-minute
 
 In all of our work we are standing on the shoulders of giants, but in this case in particular we are relying on the work of visionary projects from the Electronic Frontier Foundation, Open Knowledge International, the Swiss government, prominent scientists, and digital literacy advocates to make sure that the result is a puzzle piece helping to construct a digital society, and not just a digital bazaar.
 
-# Technical solution
+# Design
+
+Our design is based on following core principles:
+
+- User experience comes first.
+- Performance matters.
+- We build on open standards.
+
+## Developing the design
+
+Our team has a vested interested and has already been testing the water over the past year with a number of approaches to iterating the design and UX that goes into successful information products. We have a basic workflow set up to go from sketches to wireframes to prototypes, and will continue to ensure that investments into technical solutions are backed up by solid design reasoning.
+
+Partnering with experienced people and local agencies, we will use current methods of design thinking facilitation, A/B testing and focus groups, standard to a user experience engineering practice. We will evaluate and decide on the use of a widely accessible user experience/user interface framework such as [Material Design](https://material.io/) to develop our solution.
+
+# Incentives
+
+The system will built upon an incentive-driven economy.
+
+# Solution
 
 The following chapters present an outlook on the technical architecture being developed on the basis of the SmartUse project.
+
+## Software architecture
+
+Open source technology is in the DNA of this project. It has revolutionized the way that technology is developed, and made the Internet as we know it possible. In civiidiii, open source is married to the DNA of urban systems design, that is bringing it's own revolution to the way that architecture is conducted, how cities evolve through a constantly reshaped landscape of human and machine transactions. Our _software_ architecture reflects the meeting of these worlds.
+
+The initial architecture of the project had to quickly evolve through several development phases. The only constant was the web-facing user interface. It was not a priority for the alpha release to have role-based security or highly scalable implementation: these will be the goals of future phases as the project becomes operational. We are focusing on data publication standards in the next phase, APIs and search capabilities will follow soon after.
+
+Like the DataHub platform that we are inspired by, our project follows a service oriented architecture. It is built from a set of loosely coupled components, each performing distinct functions related to the platform as a whole.
+
+At civiidiii, the data-sharing and data-technology landscape is seen as a virtual manifestation of the physical city landscape, and we intend to develop and deliver software as expressive and scalable as it will need to be to work with the multiplatform and multilateral smart city of the future.
 
 ## Data aggregation
 
@@ -69,7 +97,7 @@ Despite wishing to include "exotic sources" as mentioned in the previous section
 
 Nevertheless, we chose to use a newer technology stack for the project, in order to evaluate leading-edge approaches to the technical requirements - and potentially make valuable contributions back to the community. In this light, our project aims for integration with next-generation open data portals, such as the new [datahub.io](https://datahub.io) site, while retaining compatibility with current platforms like CKAN. It implements the emerging and upcoming standards of Frictionless Data.
 
-## Frictionless Data
+## Frictionless
 
 The data exchange capabilities of the SmartUse platform are based on the [Frictionless Data Standards](https://frictionlessdata.io/specs/) for metadata exchange, in the development of which our tech lead has [been involved](https://frictionlessdata.io/articles/oleg-lavrovsky/). For an introduction, visit the [Field Guide](https://frictionlessdata.io/field-guide/). The main distinguishing features of this approach are:
 
@@ -77,14 +105,24 @@ The data exchange capabilities of the SmartUse platform are based on the [Fricti
 - platform agnostic interoperability of these data packages with various existing tools
 - cutting costs through easier integration and more consistent interpretation of data schema and sourcing
 
+## Data Packages
+
+A Data Package is a simple way of “packaging” up and describing data so that it can be easily shared and used. You can imagine as collection of data and and it's meta-data (datapackage.json), usually covering some concrete topic Eg: "Gold Prices" or "Population Growth Rate In My country" etc. Each Data Package may have zero or more resources and one or more versions.
+
 By exploiting and developing standards like the Data Package, our platform will be compliant with a rapidly growing ecosystem of data manipulation and verification tools, ensuring that data consistency, provenance and quality can be tested and assured through an open choice of channels and with diverse vendors.
 
-## Design process
+## Factories
 
-We will use current methods of design thinking facilitation, A/B testing and focus groups, standard to a user experience engineering practice. We will evaluate and decide on the use of a widely accessible user experience/user interface framework such as [Material Design](https://material.io/) to develop our solution.
+The [factory](https://github.com/datopian/factory) is a core service responsible for running the flows for datasets that are frequently updated and maintained by Datahub. This is a project that uses Datapackage Pipelines, a framework for declarative stream-processing of tabular data, and DataFlows as described above to run the flows through pipelines to process the datasets. We see this is a basic building block for the next generation of our platform.
 
-## Software architecture
+In a wider sense, we also see our technical infrastructure grouped around such factories, which are operating on various levels. Initially we will have singular customer engagements, and factories of various sophistication processing data for them. In the future, a factory-of-factories will aggregate the resulting data into the basis for new products and services. Our goal is to co-design an open factory-building process that can be repurposed for various community and 3rd party solutions.
 
-Open source is in the DNA of this project.
+# Frameworks
 
-The initial architecture of the project had to quickly evolve through several development phases. The only constant was the web-facing user interface. It was not a priority for the alpha release to have role-based security or highly scalable implementation: these will be the goals of future phases as the project becomes operational.
+To implement our initial, REST-compliant architecture, we used [Flask API](https://www.flaskapi.org/), which generates multi-format routes and Web accessible views of our API similar to [Django REST](http://www.django-rest-framework.org/) for developers to use.
+
+In the future, this project could potentially move completely to another framework, e.g. [Django](https://www.djangoproject.com/). Continuing to build upon our architectural foundation and working through requirements gathering and team-building phases to determine how the platform will be supported long term will be key to making the right decisions here.
+
+Compared to Flask, Django offers a deep integration with relational database management systems such as PostgreSQL. It provides better support for an agile development process, requiring frequent changes in the database model. Although Flask is a great option for a quick web application, in particular as a web frontend for a python script, it lacks proper support and clean integration of data migrations. Nevertheless, Flask offers database integation with low effort when using third party libraries such as SQLAlchemy. But if relational databases comes into full play together with an agile development process, the effort maintaining migrations etc. with Flash massively increases. Here, Django plays its role from the beginning. It offers a comprehensive support of "data model"-based  applications backed with a relational database by its mighty ORM (object-relational-mapping). It provides a deep integration with most relational database management systems such as e.g. PostgreSQL.
+
+# Infrastructure
