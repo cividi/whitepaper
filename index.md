@@ -33,7 +33,7 @@ Cividi users are not only website visitors who consult the information: they are
 
 # Team
 
-A world class, diverse, connected urban science team headed by a smart project manager and savvy data scientist, backed by three founders with extensive backgrounds and network.
+A world class, diverse, connected urban science team headed by a smart project manager and savvy data scientist, backed by three founders with extensive backgrounds and network. We hold advanced degrees from leading universities (ETH, Harvard, HSG, Newcastle,..), deep industry experience, and the maturity to leverage our interdisciplinary mindsets.
 
 <img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.xing.com%2Fimage%2F4_f_7_c20520023_29974389_3%2Fvikt%C3%B3ria-moln%C3%A1r-foto.1024x1024.jpg&f=1" width="300">
 
@@ -85,15 +85,13 @@ Encouraged by the ideas, outcomes and learning opportunities that have come out 
 
 ### Algorithmic planning needs Trust models
 
-Going from a smart city to a responsive city means putting more minute-to-minute decisions into the hands of technological processes, which orchestrate algorithms that need to be proven both for their effective and ethical qualities. We have been working on embedding transparency into the analytical process from day one, learning to work with a variety of communication channels to let not only data scientists and engineers understand the system, but to be able to respond to the question of "are you building a black box?" with evidence of how our system is both tamper-proof and self-explainable on a variety of levels.
-
-In all of our work we are standing on the shoulders of giants, but in this case in particular we are relying on the work of visionary projects from the Electronic Frontier Foundation, Open Knowledge International, the Swiss government, prominent scientists, and digital literacy advocates to make sure that the result is a puzzle piece helping to construct a digital society, and not just a digital bazaar.
+Going from a smart city to a responsive city means putting more minute-to-minute decisions into the hands of technological processes, which orchestrate algorithms that need to be proven both for their effective and ethical qualities. We have been working on embedding transparency into the analytical process from day one, learning to work with a variety of communication channels to ensure that laypeople - concerned citizens - can understand the system, not only the data scientists and engineers who designed it. Instead of creating "black boxes", we will promote systems that are built to be tamper-proof and explanatory on various levels.
 
 ---
 
 # Guiding principles
 
-At the launch of a new initiative it is important to put share a set of principles clarifying the vision of management. The following is a list of key starting points.
+At the launch of a new initiative it is important to share a set of principles clarifying the vision of management. The following is a list of key starting points.
 
 **Crowd-based**
 
@@ -101,7 +99,7 @@ Our vision for the scope of the project is ambitious, and we cannot hope to achi
 
 **Open platform**
 
-Specific mechanisms to incentivize open contributions of open source code changes, openly licensed data and open content are prioritized as a pillar of the crowd-based approach. This system will initially built upon utility tokens of value (points or other gamification techniques) to motivate the community to contribute and exchange reusable components (e.g. datasets, dataflows, visualizations). At a next stage, these may be enhanced with tenders and bounties supported by cryptographically traceable records (also known as "Smart Contracts").
+Specific mechanisms to incentivize open contributions of open source code changes, openly licensed data and open content are prioritized as a pillar of the crowd-based approach. This system will initially built on utility tokens of value (points or other gamification techniques) to motivate the community to contribute and exchange reusable components (e.g. datasets, dataflows, visualizations). At a next stage, these may be enhanced with tenders and bounties supported by cryptographically traceable records (also known as "Smart Contracts").
 
 **Automated spatial analysis**
 
@@ -119,6 +117,10 @@ We are acutely aware of the fact that governance plays a central role in our ide
 
 Our thesis that "Algorithmic planning needs Trust models" is a central tenet of our solution for participative governance, and it needs serious commitment to develop indicators of trust. The idea of *Responsible tech* centers on concerns around the opacity of the processes and algorithms that are put to use in large scale data-driven projects, and proposes instruments for critical analysis, detection and intervention which can be implemented by individual developers or whole communities.
 
+**Stand on shoulders**
+
+In all of our work we are standing on the shoulders of giants: for example, in the case of Trust models we are relying on the work of visionary projects from the Electronic Frontier Foundation, Open Knowledge International, the Swiss government, prominent scientists, and digital literacy advocates to make sure that the result is a puzzle piece helping to construct a digital society, and not just a digital bazaar.
+
 **Let us get it right**
 
 Every day we have the opportunity to create something that has the potential to be the ethical compass for someone making a key decision that will influence the development of institutions or neighbourhoods around the world. Our platform for participative governance may play a pivotal role in the way digitally enhanced discussions of urban planning run in 2020 and beyond - if we let it. Efficiency and profitability are a means to an end, not the goal.
@@ -130,7 +132,7 @@ Our design is based on following core principles:
 
 ### User experience comes first.
 
-Our team has a vested interested and has already been testing the water over the past year with a number of approaches to iterating the design and UX that goes into successful information products. A workflow is set up to go from sketches to wireframes to prototypes, and will continue to ensure that investments into technical solutions are backed up by solid design thinking. Partnering with experienced people and local agencies, we will use current methods of design thinking facilitation, A/B testing and focus groups, standard to a user experience engineering practice.
+Our team has a vested interest, and has already been testing the water over the past year, with a number of approaches to iterating the design and UX that goes into successful information products. A workflow is set up to go from sketches to wireframes to prototypes, and will continue to ensure that investments into technical solutions are backed up by solid design thinking. Partnering with experienced people and local agencies, we will use current methods of design thinking facilitation, A/B testing and focus groups, standard to a user experience engineering practice.
 
 ### Performance matters.
 
@@ -162,7 +164,7 @@ While we prefer open source environments like Python and open standards like CSV
 
 ## Factories
 
-The factory is a core service responsible for running the flows for datasets that are frequently updated and maintained by us at Cividi. We are basing this on the [factory](https://github.com/datopian/factory) project at DataHub that uses Datapackage Pipelines, a framework for declarative stream-processing of tabular data, and DataFlows to run the flows through pipelines to process the datasets. We see this is a basic building block for next generation platforms like ours.
+The factory is a core service responsible for running the flows for datasets that are frequently updated and maintained by us at Cividi. We are basing this on the [factory](https://github.com/datopian/factory) project at DataHub that uses Datapackage Pipelines, a framework for declarative stream-processing of tabular data, and DataFlows to run the flows through pipelines to process the datasets. We see this as a basic building block for next generation platforms like ours.
 
 In a wider sense, we also see our technical infrastructure grouped around such factories, which are operating on various levels. Initially we will have singular customer engagements, and factories of various sophistication processing data for them. In the future, a factory-of-factories will aggregate the resulting data into the basis for new products and services.
 
@@ -249,7 +251,13 @@ In this chapter we describe some specific libraries and platforms that we plan t
 
 ### Online platform
 
-To implement our initial, REST-compliant architecture, we used the Python Flask microframework and [Flask API](https://www.flaskapi.org/), to generate multi-format routes and Web accessible views of our Frictionless Data-compatible API for developers to use. During an earlier phase, we implemented a _Serverless_ architecture coupled to a Node.js environment. In the future, this project could move to another framework, or even another development environment. For example, the Python based [Django](https://www.djangoproject.com/) and it's [Django REST Framework](http://www.django-rest-framework.org/) offers comprehensive support for "data model"-based applications, provides deep integration with advanced database management systems such as PostgreSQL, and a wealth of out-of-box service and backend components to build on.
+For a startup project today it makes little sense not to build in the cloud. We are working on a mix of local datacenter and cloud-based components, but most of our development is focused on online collaboration.
+
+To implement our initial architecture, we used the Python Flask microframework and it's REST-compatible [Flask API](https://www.flaskapi.org/), to generate multi-format routes and Web accessible views of our Frictionless Data-compatible API for developers to use. During an earlier phase, we implemented a _Serverless_ architecture coupled to a Node.js environment.
+
+As a next step we are considering a rewrite in the Python based [Django](https://www.djangoproject.com/) framework, with the [Wagtail](https://wagtail.io) administration and [Django REST](http://www.django-rest-framework.org/) library offering comprehensive support for "data model"-based applications, deep integration with advanced database management systems such as PostgreSQL, and a wealth of out-of-box service and backend components to build on.
+
+In the future, this project could move to another framework, another development environment, integrate components from a mix of environments. To this end it is important for us to have flexible and scalable cloud infrastructure as discussed below.
 
 ### Data exchange
 
