@@ -1,5 +1,5 @@
 
-![](cividii.png)
+![](cividi.png)
 Consensus building with open city data
 -----------------
 
@@ -19,7 +19,9 @@ _
 
 # Abstract
 
-The heart of Cividi is a team of city and software architects creating a rich, up-to-date, high quality collection of data for urban planning purposes. When different data sources are connected, the datasets are cleaned, normalized, validated, combined and analyzed, we aim to create an extensive repository of _Responsive cities_, starting in Switzerland.
+The heart of Cividi is a collaboration between city and software architects, who are creating a rich, up-to-date, high quality environment for applying open data science to urban planning purposes. When diverse sources of information are connected together, the resulting datasets are cleaned, normalized, validated, aggregated, anonymized, they are made into ready-to-analyze resources for Data Scientists and Artificial Intelligence applications. Already today, the topic of A.I. cities is a hot and growing area of interest in our community. In this project we aim to create an extensive showcase of _Responsive cities_ and the algorithms that make them compelling models for addressing urban growth challenges - starting with Switzerland.
+
+## How does it work?
 
 Our data is collected in manual and automated ways from authoritative public sources, standardized to allow it to be queried, analyzed, and combined with other data. Factors crucial to critical understanding of the urban landscape, such as finding matches, commonalities and connections between functional areas, are made possible with access to the information as structured data.
 
@@ -27,29 +29,43 @@ We believe that an ideal analytics environment for future cities is one where th
 
 Cividi users are not only website visitors who consult the information: they are able to do their own analysis, find connections between local neighbourhoods and influential city projects, and run data-mining algorithms themselves - or collaborate with groups to whom this work is contracted through the Cividi marketplace.
 
-## Team
+---
+
+# Team
 
 A world class, diverse, connected urban science team headed by a smart project manager and savvy data scientist, backed by three founders with extensive backgrounds and network.
 
-### Viktoria
+<img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.xing.com%2Fimage%2F4_f_7_c20520023_29974389_3%2Fvikt%C3%B3ria-moln%C3%A1r-foto.1024x1024.jpg&f=1" width="300">
 
-### Thorben
+### Viktória Molnár
 
-### Markus
+[Email](mailto:viktoria@smartuse.ch) [Xing](https://www.xing.com/profile/Viktoria_Molnar7) LinkedIn
 
-### Joris
+<img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.architektura.ethz.ch%2Fwebsite%2Fwp-content%2Fuploads%2F2012%2F03%2Fprofile_web.jpg&f=1" width="300">
+
+### Thorben Westerhuys
+
+Email GitHub Twitter
+
+<img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.smartsuisse.com%2F-%2Fmedia%2Fsmartsuisse%2FImages%2FContent%2FReferenten_Personen%2FReferenten_2019%2FMarkus_Schaefer_web.jpg%3Fla%3Dde-CH%26mw%3D270&f=1" width="300">
+
+### Markus Schaefer
+
+Email LinkedIn
+
+<img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.espazium.ch%2Fuploads%2F5a29977478a20.jpg&f=1" width="300">
+
+### Joris van Wezemael
+
+Email LinkedIn
+
+<img src="https://datalets.ch/projects/sixhackathon.jpg" width="300">
 
 ### Oleg
 
-.
+Email HN IRC XMPP
 
-.
-
-.
-
-.
-
-.
+---
 
 # Theses
 
@@ -73,35 +89,19 @@ Going from a smart city to a responsive city means putting more minute-to-minute
 
 In all of our work we are standing on the shoulders of giants, but in this case in particular we are relying on the work of visionary projects from the Electronic Frontier Foundation, Open Knowledge International, the Swiss government, prominent scientists, and digital literacy advocates to make sure that the result is a puzzle piece helping to construct a digital society, and not just a digital bazaar.
 
-# Design
-
-Our design is based on following core principles:
-
-- User experience comes first.
-- Performance matters.
-- We build on open standards.
-
-## Developing the design
-
-Our team has a vested interested and has already been testing the water over the past year with a number of approaches to iterating the design and UX that goes into successful information products. We have a basic workflow set up to go from sketches to wireframes to prototypes, and will continue to ensure that investments into technical solutions are backed up by solid design reasoning.
-
-Partnering with experienced people and local agencies, we will use current methods of design thinking facilitation, A/B testing and focus groups, standard to a user experience engineering practice. We will evaluate and decide on the use of a widely accessible user experience/user interface framework such as [Material Design](https://material.io/) to develop our solution.
+---
 
 # Guiding principles
 
 At the launch of a new initiative it is important to put share a set of principles clarifying the vision of management. The following is a list of key starting points.
 
-**Let us get it right**
-
-Every day we have the opportunity to create something that has the potential to be the ethical compass for someone making a key decision that will influence the development of institutions or neighbourhoods around the world. Our platform for participative governance may play a pivotal role in the way digitally enhanced discussions of urban planning run in 2020 and beyond - if we let it. Efficiency and profitability are a means to an end, not the goal.
-
 **Crowd-based**
 
-Our vision for the scope of the project is ambitious, and we cannot hope to achieve these goals within a reasonable time with hired hands alone. We will pursue a crowdsourced approach at all levels of operations, in research and in development, and aim to grow into the form of a crowd-based, distributed organization - such as a Cooperative - in the near future.
+Our vision for the scope of the project is ambitious, and we cannot hope to achieve these goals within a reasonable time with hired hands alone. We will pursue a crowdsourced approach at all levels of operations, in research and in development, and aim to grow into the form of a crowd-based, distributed organization - such as a Cooperative - in the near future. This means a dedication to ethical foundations and pursuit of inclusion and diversity of opinion above all.
 
 **Open platform**
 
-Specific mechanisms to incentivize open contributions of source code or data or content will be prioritized as a pillar of the crowd-based approach. This system will initially built upon utility tokens of value (points) to motivate the community contribute and exchange reusable components (e.g. datasets, dataflows, visualizations). At a next stage, these will be enhanced with tenders and bounties supported by cryptographically traceable records (also known as "Smart Contracts").
+Specific mechanisms to incentivize open contributions of open source code changes, openly licensed data and open content are prioritized as a pillar of the crowd-based approach. This system will initially built upon utility tokens of value (points or other gamification techniques) to motivate the community to contribute and exchange reusable components (e.g. datasets, dataflows, visualizations). At a next stage, these may be enhanced with tenders and bounties supported by cryptographically traceable records (also known as "Smart Contracts").
 
 **Automated spatial analysis**
 
@@ -115,19 +115,40 @@ As the cost efficiency and reliability of this technology continuing to increase
 
 We are acutely aware of the fact that governance plays a central role in our idea, and are following closely the developments of new ethical, philosophic and regulatory frameworks around the idea of 'humane' or _responsible_ technology. We are a Civic Tech initiative that strives to provoke and complement developments in the legal and political field. Details are presented in the following section.
 
-# Responsible technology
+**Responsible technology**
 
 Our thesis that "Algorithmic planning needs Trust models" is a central tenet of our solution for participative governance, and it needs serious commitment to develop indicators of trust. The idea of *Responsible tech* centers on concerns around the opacity of the processes and algorithms that are put to use in large scale data-driven projects, and proposes instruments for critical analysis, detection and intervention which can be implemented by individual developers or whole communities.
 
-> _The tools currently available to policymakers, legislators, and courts were developed to oversee human decisionmakers and often fail when applied to computers instead. For example, how do you judge the intent of a piece of software? [...] We challenge the dominant position in the legal literature that transparency will solve these problems. Disclosure of source code is often neither necessary (because of alternative techniques from computer science) nor sufficient (because of the issues analyzing code) to demonstrate the fairness of a process._
+**Let us get it right**
 
--- Excerpted from [Accountable Algorithms](https://scholarship.law.upenn.edu/penn_law_review/vol165/iss3/3/) (Joshua A. Kroll et al. 2017)
+Every day we have the opportunity to create something that has the potential to be the ethical compass for someone making a key decision that will influence the development of institutions or neighbourhoods around the world. Our platform for participative governance may play a pivotal role in the way digitally enhanced discussions of urban planning run in 2020 and beyond - if we let it. Efficiency and profitability are a means to an end, not the goal.
 
-See [Open Rights Group](https://wiki.openrightsgroup.org/wiki/Regulating_for_Responsible_Technology) for a discussion of the arguments of Responsible Technology from a policymaking standpoint. We see these principles come to life and be supported through initiatives like [Better IoT](https://betteriot.wordpress.com/), and similar projects that we would like to be able to champion and advocate through our platform. In this way we will be developing Trust models on the basis of rigorously evaluated formal criteria created together with inputs from academia, civil society, and practitioners in the field..
+
+# Design
+
+Our design is based on following core principles:
+
+### User experience comes first.
+
+Our team has a vested interested and has already been testing the water over the past year with a number of approaches to iterating the design and UX that goes into successful information products. A workflow is set up to go from sketches to wireframes to prototypes, and will continue to ensure that investments into technical solutions are backed up by solid design thinking. Partnering with experienced people and local agencies, we will use current methods of design thinking facilitation, A/B testing and focus groups, standard to a user experience engineering practice.
+
+### Performance matters.
+
+We will evaluate and decide on the use of a widely accessible mobile-first user experience/user interface frameworks to develop our solution. Our products will be smooth, stable, minmalist, inviting play and experimentation. We aspire to the level of game design and industrial software when it comes to how intuitive and reliable our tools are in the hands of the users. This means bringing the best software and hardware engineering together into a comprehensively designed product.
+
+### Design for trust.
+
+The topic of urban growth is contentious and gaining public trust is going to be a constant theme in our work. The arguments of Responsible Technology are relevant both from a policymaking standpoint and as an integral part of our design process. This involves: foresight activities to anticipate opportunities and challenges of digital technologies, working on guidelines and legal change to enable engagement with all parts of society, conducting research into the benefits and harms of technologies we introduce, providing clear, understandable information and guidance.
+
+We see these principles come to life and be supported through initiatives like [Better IoT](https://betteriot.wordpress.com/), and similar projects that we would like to be able to champion and advocate through our platform. In this way we will be developing Trust models on the basis of rigorously evaluated formal criteria created together with inputs from academia, civil society, and practitioners in the field.
+
+---
 
 # Solution
 
 The diagram below shows a high-level view of the platform architecture that is being developed on the basis of the SmartUse project. Detailed descriptions of some of the core components appear in the following sections.
+
+[DIA]
 
 The following sections describe key concepts of our solution. In the next chapter (Frameworks) we will document more specific platform components.
 
@@ -226,7 +247,13 @@ Like the DataHub platform that we are inspired by, our project follows a service
 
 In this chapter we describe some specific libraries and platforms that we plan to use to implement our solution.
 
-## Data aggregation
+### Online platform
+
+To implement our initial, REST-compliant architecture, we used the Python Flask microframework and [Flask API](https://www.flaskapi.org/), to generate multi-format routes and Web accessible views of our Frictionless Data-compatible API for developers to use. During an earlier phase, we implemented a _Serverless_ architecture coupled to a Node.js environment. In the future, this project could move to another framework, or even another development environment. For example, the Python based [Django](https://www.djangoproject.com/) and it's [Django REST Framework](http://www.django-rest-framework.org/) offers comprehensive support for "data model"-based applications, provides deep integration with advanced database management systems such as PostgreSQL, and a wealth of out-of-box service and backend components to build on.
+
+### Data exchange
+
+LD, WMS, OSM, CKAN, ..
 
 ### Geospatial analytics
 
@@ -240,19 +267,18 @@ Jupyter, Pandas, ..
 
 Mapbox, Kepler, ..
 
-## Online platform
+### Integration platforms
 
-To implement our initial, REST-compliant architecture, we used the Python Flask microframework and [Flask API](https://www.flaskapi.org/), to generate multi-format routes and Web accessible views of our Frictionless Data-compatible API for developers to use. During an earlier phase, we implemented a _Serverless_ architecture coupled to a Node.js environment. In the future, this project could move to another framework, or even another development environment. For example, the Python based [Django](https://www.djangoproject.com/) and it's [Django REST Framework](http://www.django-rest-framework.org/) offers comprehensive support for "data model"-based applications, provides deep integration with advanced database management systems such as PostgreSQL, and a wealth of out-of-box service and backend components to build on.
+Open-DAI, Pelias, Geoplatform, Stae ...
 
 ## Infrastructure
 
-TBD: discussion on how our cloud dependencies are evaluated and managed.
+Discussion on how our cloud dependencies are evaluated and managed.
 
 # References
 
 Literature list for further reading.
 
-- Open Knowlege
-- Frictionless Data
-- CKAN, Open-DAI, Pelias, Geoplatform, Stae ...
-- ...
+> _The tools currently available to policymakers, legislators, and courts were developed to oversee human decisionmakers and often fail when applied to computers instead. For example, how do you judge the intent of a piece of software? [...] We challenge the dominant position in the legal literature that transparency will solve these problems. Disclosure of source code is often neither necessary (because of alternative techniques from computer science) nor sufficient (because of the issues analyzing code) to demonstrate the fairness of a process._
+
+-- Excerpted from [Accountable Algorithms](https://scholarship.law.upenn.edu/penn_law_review/vol165/iss3/3/) (Joshua A. Kroll et al. 2017)
