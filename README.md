@@ -134,29 +134,27 @@ Our design is based on following core principles:
 
 Our team has a vested interest, and has already been testing the water over the past year, with a number of approaches to iterating the design and UX that goes into successful information products. A workflow is set up to go from sketches to wireframes to prototypes, and will continue to ensure that investments into technical solutions are backed up by solid design thinking. Partnering with experienced people and local agencies, we will use current methods of design thinking facilitation, A/B testing and focus groups, standard to a user experience engineering practice.
 
-### Performance matters.
-
-We will evaluate and decide on the use of a widely accessible mobile-first user experience/user interface frameworks to develop our solution. Our products will be smooth, stable, minmalist, inviting play and experimentation. We aspire to the level of game design and industrial software when it comes to how intuitive and reliable our tools are in the hands of the users. This means bringing the best software and hardware engineering together into a comprehensively designed product.
-
 ### Design for trust.
 
-The topic of urban growth is contentious and gaining public trust is going to be a constant theme in our work. The arguments of Responsible Technology are relevant both from a policymaking standpoint and as an integral part of our design process. This involves: foresight activities to anticipate opportunities and challenges of digital technologies, working on guidelines and legal change to enable engagement with all parts of society, conducting research into the benefits and harms of technologies we introduce, providing clear, understandable information and guidance.
+The topic of urban growth is contentious, as are new applications for data. Gaining public trust through legal frameworks and advocating for responsible technology is relevant both from a policy standpoint and as an integral part of our design process. This involves foresight activities to anticipate opportunities and challenges, working on legal guidelines and change management with all parts of society, conducting research into the benefits and harms of technologies we introduce, providing clear, understandable information. We see these principles come to life through initiatives like [Better IoT](https://betteriot.wordpress.com/), and we wish to be and support other responsible technology projects which develop trust models on the basis of rigorously evaluated formal criteria, created together with inputs from academia, civil society, and practitioners in the field.
 
-We see these principles come to life and be supported through initiatives like [Better IoT](https://betteriot.wordpress.com/), and similar projects that we would like to be able to champion and advocate through our platform. In this way we will be developing Trust models on the basis of rigorously evaluated formal criteria created together with inputs from academia, civil society, and practitioners in the field.
+### Performance matters.
+
+We will evaluate and decide on the use of a widely accessible mobile-first user experience/user interface frameworks to develop our solution. Our products will be smooth, stable, minimalist, inviting play and experimentation. We aspire to the level of game design and industrial software when it comes to how intuitive and reliable our tools are in the hands of the users. This means bringing the best software and hardware engineering together into a comprehensively designed product.
 
 ---
 
 # Solution
 
-The diagram below shows a high-level view of the platform architecture that is being developed on the basis of the SmartUse project. Detailed descriptions of some of the core components appear in the following sections.
+The diagram below shows a high-level view of the platform architecture that is being developed on the basis of the Smart Use cooperation project. Detailed descriptions of some of the core components appear in the following sections.
 
-[DIA]
+![](platform-birdseye.png)
 
 The following sections describe key concepts of our solution. In the next chapter (Frameworks) we will document more specific platform components.
 
 ## Data aggregation
 
-In order to get that data, we have an extensive set of downloaders and scrapers which get the data from government publications and other web-sites. The fetched data is then processed and combined, and eventually saved to disk (so that people can download the raw data without hassle), loaded to a relational database (so that analysts can do in-depths queries of the data) and pushed to a key-store value (search engine) which serves our main website (cividi.ch).
+In order to get that data, we have an extensive set of downloaders and scrapers which get the data from government publications and other web-sites. The fetched data is then processed and combined, and eventually saved to disk (so that people can download the raw data without hassle), loaded to a relational database (so that analysts can do in-depths queries of the data) and pushed to a key-store value (search engine) which serves our applications.
 
 The building blocks that we are using to accomplish all of this are called dataflows, based on the Data Package Pipelines developed at Open Knowledge. These frameworks allow us to write simple 'pipelines', each consisting of a set of predefined processing steps. Most of the pipelines use of a set of common building-blocks, and some custom processors - mainly custom scrapers for exotic sources.
 
@@ -172,11 +170,13 @@ Our goal is to co-design an open factory-building process that can be repurposed
 
 ## Data portals
 
-As our primary basis we wish to build on the efforts to deploy central open data portals around the worlds. Closest to us are those of the Swiss federal government, [opendata.swiss](https://opendata.swiss), the Swiss cantons which are also represented there, the City of Zürich [data.stadt-zuerich.ch](https://data.stadt-zuerich.ch) and other forward-thinking communes. Many of these portals are based on the [CKAN software](https://ckan.org) from Open Knowledge that is the forerunner and important basis for Frictionless Data.
+As our primary basis we wish to build on the efforts to deploy central open data portals around the worlds. Closest to us are those of the Swiss federal government, [opendata.swiss](https://opendata.swiss), the Swiss cantons which are also represented there, the City of Zürich [data.stadt-zuerich.ch](https://data.stadt-zuerich.ch) and other forward-thinking communes. Many of these portals are based on the [CKAN software](https://ckan.org) from Open Knowledge that is the forerunner and important basis for Frictionless Data. Notably, CKAN provides a federated model for data exchange whereby metadata published on local portals can be promoted and consistently represented on regional, national and international portals.
 
 ## Frictionless Data
 
-Our overall design principles are based on those of the [Frictionless Data](http://frictionlessdata.io/specs/) project, excerpted here:
+Going beyond federated open data, Frictionless Data builds on the principles of the Web of Data with a set of standards, and a community building tools on a middle ground between centralized/siloed open data and more widely distributed (Linked Data, IPFS, Blockchain or otherwise transmitted) concepts for data exchange.
+
+We are inspired by the following principles from the [frictionlessdata.io](http://frictionlessdata.io/specs/) project, excerpted here:
 
 1.  **Focused**: We have a sharp focus on one part of the data chain, one specific feature – packaging – and a few specific types of data (e.g. tabular).
 2.  **Web Oriented**: We build for the web using formats that are web "native" such as JSON, work naturally with HTTP such as plain text CSVs (which stream).
