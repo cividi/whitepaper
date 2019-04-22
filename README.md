@@ -10,12 +10,15 @@ _
 - [Who we are](#who-we-are)
 - [Abstract](#abstract)
 - [3x Theses](#theses)
-- [Design](#design)
 - [Principles](#guiding-principles)
+- [Design](#design)
 - [Solution](#solution)
 - [Architecture](#technology-architecture)
 - [Infrastructure](#infrastructure)
+- [Roadmap](#roadmap)
 - [References](#references)
+
+<style type="text/css">h1 { page-break-before:always }</style>
 
 ---
 
@@ -23,31 +26,33 @@ _
 
 Cividi is being launched by a world class, diverse, connected urban science team, backed by founders with extensive backgrounds and wide-ranging network. We hold advanced degrees from leading universities (ETH, Harvard, HSG, Newcastle), deep industry experience, and the maturity to leverage our interdisciplinary mindsets.
 
-<img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.xing.com%2Fimage%2F4_f_7_c20520023_29974389_3%2Fvikt%C3%B3ria-moln%C3%A1r-foto.1024x1024.jpg&f=1" width="300">
+<img src="team/viktoria.jpg" width="300">
 
 ### Viktória Molnár
 
 [Email](mailto:viktoria@smartuse.ch) [Xing](https://www.xing.com/profile/Viktoria_Molnar7) LinkedIn
 
-<img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.architektura.ethz.ch%2Fwebsite%2Fwp-content%2Fuploads%2F2012%2F03%2Fprofile_web.jpg&f=1" width="300">
+<img src="team/thorben.jpg" width="300">
 
 ### Thorben Westerhuys
 
 Email GitHub Twitter
 
-<img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.smartsuisse.com%2F-%2Fmedia%2Fsmartsuisse%2FImages%2FContent%2FReferenten_Personen%2FReferenten_2019%2FMarkus_Schaefer_web.jpg%3Fla%3Dde-CH%26mw%3D270&f=1" width="300">
+<img src="team/markus.jpg" width="300">
 
 ### Markus Schaefer
 
 Email LinkedIn
 
-<img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.espazium.ch%2Fuploads%2F5a29977478a20.jpg&f=1" width="300">
+<img src="team/joris.jpg" width="300">
+> _"People understand spaces whether they are experts or not."_
 
 ### Joris van Wezemael
 
 Email LinkedIn
 
-<img src="https://datalets.ch/projects/sixhackathon.jpg" width="300">
+<img src="team/oleg.jpg" width="300">
+> _"Maximizing your personal and group potential within the given time and space constraints, instead of meeting arbitrary expectations, makes hackathons well suited to the 21st century knowledge workplace."_
 
 ### Oleg Lavrovsky
 
@@ -58,13 +63,13 @@ Email HN IRC XMPP
 
 # Abstract
 
-Cividi is a collaboration between city and software architects, proposing a powerful environment for applying data science to urban planning purposes. When diverse sources of information are connected together, the anonymized datasets are cleaned, normalized, validated, aggregated, made into ready-to-analyze resources - the foundations are laid for _Smart Use_ of the urban landscape. This development in itself leads to _Responsive Cities_ built by the people and algorithms enabling superior models for addressing spatial challenges.
+Cividi is a civic tech collaboration applying data science to new challenges in urban design. Our applications will help you to better understand the city, and for the city to better understand itself.
 
-Data about the urban environment is collected today in many manual and automated ways from authoritative and unofficial sources, standardized to allow it to be queried, analyzed, and combined with other data. Factors crucial to critical understanding of the urban landscape, such as finding matches, commonalities and connections between functional areas, have been increasingly made possible with access to the information as structured data. These innovative approaches need to be more widely used - and understood.
+Just as with other professional services businesses, the connection between those who provide architecture services, and those who purchase it, has transformed: creating demand for a more collaborative and open relationship. From the customer’s perspective there is a heightened sense that their relationship with their urban planning firms should be more like their relationships with other vendors: transparent, open, cooperative, actively managed and predictable. These trends are pushing leading firms to realize that, if they want to stay competitive, they must change. This reflects the shifting dynamics of modern city politics, which in the age of e-Government and dropping poll counts, is concerned with ensuring citizen participation through ancillary means. We are here to enable architects, planners, engineers and policymakers to work together with the citizenry through shared insights into what makes a city tick.
 
-Cividi users are citizens empowered by data infrastructure, who consult information sources and make better decisions. They are able to verify the due diligence on architectural plans, connect the dots between local street projects and massive city-scale investments, explore the science behind open data and algorithms, participate in crowdsourcing projects, connect their own software and hardware, and even become employed in studies contracted through an online marketplace.
+To do this, we are building a new platform for organizations to connect to their stakeholders in urban planning, to bring a fresh and transparent approach to negotiations, to build a long lasting connection to customers around shared interests. Cividi users are citizens empowered by data infrastructure, who are willing to consult information sources to form opinions and make better decisions. They are able to verify the due diligence on architectural plans, connect the dots between local street projects and massive city-scale investments, explore the science behind open data and algorithms, participate in crowdsourcing projects, connect their own software and hardware, and even take part in studies contracted through online markets.
 
-We believe that an ideal environment for imagining neighborhoods of the future, is one where the differences of perspective between the planner, architect, data scientist, civic activist are no longer a deciding factor in determining the outcome of development projects. By eliminating friction in technical components and motivating collaboration between user of diverse skills, we are building bridges that decrease planning deadlock, increase productivity, and bring enormous potential cost benefits.
+We believe that an ideal environment for imagining neighborhoods of the future, is one where the differences of perspective between the planner, architect, data scientist, civic activist are seen as opportunities instead of as barriers. By eliminating friction in technical components and motivating collaboration between user of diverse skills, we are building bridges that decrease planning deadlock, increase productivity, and bring cost savings.
 
 ---
 
@@ -72,17 +77,17 @@ We believe that an ideal environment for imagining neighborhoods of the future, 
 
 There are three basic ideas fundamental this project, which help us to identify key stakeholders and focus our challenges on the longer timescale.
 
-### I. Big Architecture is facing Big Changes
+### I. The future of cities is **Responsive**
 
-We have to enable the architects, planners, engineers and policymakers to work together with the citizenry through shared insights into what makes a city tick. Why? Just as with other professional services businesses, the connection between those who provide a service and those who purchase it has transformed, creating demand for a more collaborative and open relationship. From the customer’s perspective there is a heightened sense that their relationship with their urban planning firms should be more like their relationships with other vendors: transparent, open, cooperative, actively managed and predictable. These trends are pushing leading firms to realize that, if they want to stay competitive, they must change. This reflects the shifting dynamics of modern city politics, which in the age of eGovernment and dropping poll counts, is concerned with ensuring citizen participation through ancillary means.
+When diverse sources of information about the urban environment are connected together, non-identifying datasets made into open data resources for civic participation, the foundations are laid for _Smart Use_ of the urban landscape. Factors crucial to critical understanding of the urban landscape, such as finding matches, commonalities and connections between functional areas, have been increasingly made possible with access to the information as structured open data and with the possibilities of machine learning. This leads to _Responsive Cities_, a collaboration of people and models to enable specific, real-time and distributed responses to spatial challenges.
 
-### II. Civic Innovation takes Practice
+### II. Algorithmic planning needs **Trust models**
 
-In addition to getting close to our online audience, we intend to make Cividi a common sight at events IRL (In the Real World). Borrowed from the late night engineering culture of pioneering technical campuses in the 60s, the term “hackathon” refers to an intensive collaboration of people working on a project or exploring solutions to a difficult problem within strict time constraints. By organizing urban analytics hackathons we will invite developers to hack on our platform and build their own solutions on top of it. We will actively support and participate in third party events, get early exposure to the community. If our platform works for these kinds of audiences, it will gain viral potential and scale beyond the initial applications while accelerating our open source development model.
+Going from a Smart city to a Responsive city means putting more minute-to-minute decisions into the hands of technological processes, which orchestrate algorithms that need to be proven both for their effective and ethical qualities. We have been working on embedding transparency into the analytic process from day one, learning to work with a variety of communication channels to ensure that laypeople - concerned citizens - can understand the system, not only the data scientists and engineers who designed it. We will promote systems that are built to be tamper-proof and explanatory on various levels, investing into a deep foundation for data trust.
 
-### Algorithmic planning needs Trust models
+### III. Civic Innovation takes **Practice**
 
-Going from a Smart city to a Responsive city means putting more minute-to-minute decisions into the hands of technological processes, which orchestrate algorithms that need to be proven both for their effective and ethical qualities. We have been working on embedding transparency into the analytics process from day one, learning to work with a variety of communication channels to ensure that laypeople - concerned citizens - can understand the system, not only the data scientists and engineers who designed it. Instead of creating "black boxes", we will promote systems that are built to be tamper-proof and explanatory on various levels. Investing into the development of deepening foundation for data trust will be a key part of our work.
+Borrowed from the late night engineering culture of pioneering technical campuses in the 60s, the term “hackathon” refers to an intensive collaboration of people working on a project or exploring solutions to a difficult problem within strict time constraints. By organizing urban analytics hackathons we will invite developers to hack on our platform and build their own solutions on top of it.  If our platform works for these kinds of audiences, it will gain viral potential and scale beyond the initial applications while accelerating our open source development model. Practice makes perfect.
 
 ---
 
@@ -100,7 +105,7 @@ Specific mechanisms to incentivize open contributions of open source code change
 
 **Automated spatial analysis**
 
-The use of Geographic Information Systems (GIS) is a foundational area of our platform. Developments in remote sensing, in particular the proliferation of wide-scale, high resolution, and near-time satellite imagery, have led to notable developments in automating the analysis of land use patterns from crop yields to parking lot occupancy. Online marketplaces and data exchanges are already a key instrument to improve and widen the reach of automated spatial analysis (ASA) technology. Yet few are able to take into account the speed at which Machine Learning and Open Data are advancing the state of the art. This will be our competitive edge.
+The use of Geographic Information Systems (GIS) is a foundational area of our platform. Developments in remote sensing, in particular the proliferation of wide-scale, high resolution, and near-time satellite imagery, have led to notable developments in automating the analysis of land use patterns from crop yields to parking lot occupancy. Online marketplaces and data exchanges are already a key instrument to improve and widen the reach of automated spatial analysis (ASA) technology. Few are able to take into account the speed at which Machine Learning and Open Data are advancing the state of the art and apply it in practice, and this is our competitive edge.
 
 **Consumer choice**
 
@@ -117,39 +122,6 @@ In all of our work we are standing on the shoulders of giants: for example, in t
 **Let us get it right**
 
 Every day we have the opportunity to create something that has the potential to be the ethical compass for someone making a key decision that will influence the development of institutions or neighbourhoods around the world. Our platform for participative governance may play a pivotal role in the way digitally enhanced discussions of urban planning run in 2020 and beyond - if we let it. Efficiency and profitability are a means to an end, not the goal.
-
----
-
-# Roadmap
-
-This section outlines the main milestones we are committed to in this project, and explains how they are related to the building blocks of our solution which you can find detailed in further chapters.
-
-**2019 Mobilisation**
-
-_"Bringing questions and approaches to the people"._
-
-- The beta platform should be integrated into a stable, functioning, professionally hosted environment and architecture.
-  - Compatibility with different data formats
-and the interfaces to social media, blogs or online news
-- Application examples on current topics should be published in the media.
-  - Workshops for municipalities, companies or public authorities should address the issues and approaches and an understanding of the possibilities of Open Data in the Planning of open spaces, quarters and areas can be created.
-- Project work allows specific questions to be investigated for clients.
-
-**2020 Stabilisation**
-
-_"Enabling a longer-term functioning of the platform"._
-
-- A payment model must be developed to enable the platform, to allow contributors to participate in the revenues of the platform. This could be done via Smart Contracts with blockchain technology.
-- Accordingly, an institutional format must also be found: Association, Cooperative or something.
-- Accordingly, a model must also be developed in which users (e.g. of mobile telephony or postal services) are involved in the monetization of their data.
-
-**2021 Further development**
-
-_"Activating the potential in the evaluation of data"._
-
-- Data can be used to generate structural indices for the use of urban in this room.
-- The indices can be marketed via user licenses or project work.
-- Participants ("cooperative members") would be compensated.
 
 ---
 
@@ -184,13 +156,7 @@ The following sections describe key concepts of our solution architecture. The n
 
 ## Open technology
 
-Open technology is in the DNA of this project. Open source has revolutionized the way that computer technology is developed, making the Internet as we know it today possible.
-
-Urban design is evolving to become a field accessible and usable by people around the world, contributing to the desire and initiatives to standardize city planning around the world. We see this as an extension of the open technology to the way we shape the physical world.
-
-> _"People understand spaces whether they are experts or not."_ --Joris
-
-In Cividi, open source is married to the DNA of urban systems design, that is bringing it's own revolution to the way that architecture is conducted, how cities evolve through a constantly reshaped landscape of human and machine transactions. Our architecture reflects the meeting of these worlds.
+Open source has revolutionized the way that computer technology is developed, making the Internet as we know it today possible. As urban design evolves to become a field within reach of people around the world, open tools create opportunities to contribute to city planning among the many creative ways we use technology to shape the physical world. At Cividi, open source is married to the DNA of urban systems design, that is bringing its own revolution to the way that architecture is conducted, how cities evolve through a constantly reshaped landscape of human and machine transactions. Our design decisions reflect the meeting of these worlds.
 
 ## Cities by design
 
@@ -303,6 +269,47 @@ We are currently using Mapbox to create interactive, high quality renderings of 
 ### Integration platforms
 
 Beyond compatibility with mapping platforms, we need to ensure that programmatic access to our APIs is a gateway to very different uses of our platform. Early experiences with platforms like Open-DAI, Pelias, Geoplatform and Stae have enabled us to consider the implications and challenges of successfully opening up our services to agents and algorithms from third parties ...
+
+---
+
+# Roadmap
+
+This section outlines the main milestones we are committed to in this project, and explains how they are related to the building blocks of our solution which you can find detailed in further chapters.
+
+**2019 Mobilisation**
+
+_"Bringing questions and approaches to the people"._
+
+In our previous project, [Smart Use](https://smartuse.ch), our team built a lightweight framework on which we published a set of spatial stories in the form of Data Packages, based on open source geodata analytics, and with an open API built to Frictionless Data specifications, that is compatible with an emerging ecosystem of tools and processes. The launch of this project in Q2FY19 is the starting point for the development of Cividi.
+
+A stable, functioning, professionally hosted environment and architecture is the next step for launching a Beta platform. Technically, we need to connect a variety data streams, from big spatial data to interfaces to social media, blogs or online news. This means revamping our infrastructure and building our product with enterprise grade components for authentication, automation, search and storage.
+
+This will be a transition and an opportunity to test many of the tools and technologies we will rely on, to build a presence for the company. We need to launch a company website, on whose newsfeed we can show regular signs of life, pointing to online and IRL (events) activities.
+
+Current application examples on topics of interest to our community should be published in blogs and eventually in the media.
+
+Workshops for municipalities, companies or public authorities should address the issues and approaches and an understanding of the possibilities of Open Data in the Planning of open spaces, quarters and areas can be created.
+
+Project work allows specific questions to be investigated for clients. We will start creating the basis for professional services - project pipeline, legal basis, resources - towards the end of the first year.
+
+**2020 Stabilisation**
+
+_"Enabling a longer-term functioning of the platform"._
+
+- A payment model must be developed to enable the platform, to allow contributors to participate in the revenues of the platform. This could be done via Smart Contracts with blockchain technology.
+- Accordingly, an institutional format must also be found: Association, Cooperative or something.
+- Accordingly, a model can also be developed in which users (e.g. of mobile telephony or postal services) are involved in the monetization of their data. This could be done in the form of a partnership or with open source tools.
+- Client services are further development and regularized with help of a sales and support team.
+
+**2021 Further development**
+
+_"Activating the potential in the evaluation of data"._
+
+- Data can be used to generate structural indices for the use of urban in this room.
+- The indices can be marketed via user licenses or project work.
+- Participants ("cooperative members") would be compensated for their contributions.
+
+---
 
 # References
 
