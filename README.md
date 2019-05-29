@@ -7,8 +7,8 @@ _
 
 **Whitepaper** | v1.0 | SmartUse GmbH, April 2019
 
-- [Who we are](#who-we-are)
 - [Abstract](#abstract)
+- [Who we are](#who-we-are)
 - [3x Theses](#theses)
 - [Principles](#guiding-principles)
 - [Design](#design)
@@ -19,6 +19,20 @@ _
 - [References](#references)
 
 <style type="text/css">h1 { page-break-before:always }</style>
+
+---
+
+![](rockets/ракета1.jpg)
+
+# Abstract
+
+Cividi is a civic tech startup collaboratively applying data science to new challenges in urban design. Our applications will help you to better understand the city, and for the city to better understand itself.
+
+Just as with other professional services businesses, the connection between those who provide architecture services, and those who purchase it, has transformed: creating demand for a more collaborative and open relationship. From the citizen's perspective there is a heightened sense that their relationship with the urban planning field should be more like their relationships with vendors in other industries: transparent, open, cooperative, actively managed and predictable. These trends are pushing leading firms to realize that, if they want to stay competitive, they must change. This reflects the shifting dynamics of modern city politics, which in the age of e-Government and dropping poll counts, is concerned with ensuring citizen participation through ancillary means. We are here to enable architects, planners, engineers and policymakers to work together with the citizenry through shared insights based on data science, into what truly makes a city tick.
+
+To do this, we are building platforms for organizations to connect to their stakeholders in urban planning, to bring a fresh and transparent approach to negotiations, to build a long lasting connection to customers around shared interests. Cividi users are citizens empowered by public data infrastructure, who are willing to consult information sources to form opinions and make better decisions. They are able to verify the due diligence on architectural plans, connect the dots between local street projects and city-scale investments, explore the science behind open data and algorithms, participate in crowdsourcing projects, connect their own software and hardware, and even take part in studies contracted through online markets.
+
+We believe that an ideal environment for imagining neighborhoods of the future, is one where the differences of perspective between the planner, architect, data scientist, civic activist are seen as opportunities instead of as barriers. By eliminating friction in technical components and motivating collaboration between user of diverse skills, we are building bridges that decrease planning deadlock, increase productivity, and bring cost savings.
 
 ---
 
@@ -57,19 +71,6 @@ Email LinkedIn
 ### Oleg Lavrovsky
 
 Email HN IRC XMPP
-
----
-
-
-# Abstract
-
-Cividi is a civic tech collaboration applying data science to new challenges in urban design. Our applications will help you to better understand the city, and for the city to better understand itself.
-
-Just as with other professional services businesses, the connection between those who provide architecture services, and those who purchase it, has transformed: creating demand for a more collaborative and open relationship. From the customer’s perspective there is a heightened sense that their relationship with their urban planning firms should be more like their relationships with other vendors: transparent, open, cooperative, actively managed and predictable. These trends are pushing leading firms to realize that, if they want to stay competitive, they must change. This reflects the shifting dynamics of modern city politics, which in the age of e-Government and dropping poll counts, is concerned with ensuring citizen participation through ancillary means. We are here to enable architects, planners, engineers and policymakers to work together with the citizenry through shared insights into what makes a city tick.
-
-To do this, we are building a new platform for organizations to connect to their stakeholders in urban planning, to bring a fresh and transparent approach to negotiations, to build a long lasting connection to customers around shared interests. Cividi users are citizens empowered by data infrastructure, who are willing to consult information sources to form opinions and make better decisions. They are able to verify the due diligence on architectural plans, connect the dots between local street projects and massive city-scale investments, explore the science behind open data and algorithms, participate in crowdsourcing projects, connect their own software and hardware, and even take part in studies contracted through online markets.
-
-We believe that an ideal environment for imagining neighborhoods of the future, is one where the differences of perspective between the planner, architect, data scientist, civic activist are seen as opportunities instead of as barriers. By eliminating friction in technical components and motivating collaboration between user of diverse skills, we are building bridges that decrease planning deadlock, increase productivity, and bring cost savings.
 
 ---
 
@@ -142,7 +143,7 @@ The topic of urban growth is contentious, as are new applications for data. Gain
 We will evaluate and decide on the use of a widely accessible mobile-first user experience/user interface frameworks to develop our solution. Our products will be smooth, stable, minimalist, inviting play and experimentation. We aspire to the level of game design and industrial software when it comes to how intuitive and reliable our tools are in the hands of the users. This means bringing the best software and hardware engineering together into a comprehensively designed product.
 
 ![](Cividi 1.0.svg.png)
-_Mock-up of an early mobile app design_
+_Mock-up of an early idea for a mobile app connected to our platform_
 
 ---
 
@@ -158,9 +159,9 @@ The following sections describe key concepts of our solution architecture. The n
 
 Open source has revolutionized the way that computer technology is developed, making the Internet as we know it today possible. As urban design evolves to become a field within reach of people around the world, open tools create opportunities to contribute to city planning among the many creative ways we use technology to shape the physical world. At Cividi, open source is married to the DNA of urban systems design, that is bringing its own revolution to the way that architecture is conducted, how cities evolve through a constantly reshaped landscape of human and machine transactions. Our design decisions reflect the meeting of these worlds.
 
-## Cities by design
+## Open innovation
 
-At Cividi, the data-sharing and data-technology landscape is seen as a virtual manifestation of the physical city landscape, and we intend to develop and deliver software as expressive and scalable as it will need to be to work with the multiplatform and multilateral smart city of the future.
+At Cividi, the data-sharing and data-technology landscape is seen as a virtual manifestation of the physical city landscape, helping to create the multiplatform and multilateral smart city of the future through online networks. Open innovation allows individual users and the public to become the primary source of value within projects, through monetary or creative support.
 
 ## Software by design
 
@@ -318,3 +319,5 @@ Literature list for further reading.
 > _The tools currently available to policymakers, legislators, and courts were developed to oversee human decisionmakers and often fail when applied to computers instead. For example, how do you judge the intent of a piece of software? [...] We challenge the dominant position in the legal literature that transparency will solve these problems. Disclosure of source code is often neither necessary (because of alternative techniques from computer science) nor sufficient (because of the issues analyzing code) to demonstrate the fairness of a process._
 
 -- Excerpted from [Accountable Algorithms](https://scholarship.law.upenn.edu/penn_law_review/vol165/iss3/3/) (Joshua A. Kroll et al. 2017)
+
+-- From [Crowdsourcing the Built Environment](https://medium.com/harvard-real-estate-review/crowdsourcing-the-built-environment-382718b99da4) - Harvard Real Estate Review (Wendy W. Fok 2017)
