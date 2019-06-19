@@ -195,16 +195,11 @@ For a more detailed introduction, visit the [Frictionless Data Field Guide](http
 
 A Data Package is a simple way of “packaging” up and describing data so that it can be easily shared and used. You can imagine as collection of data and and it's meta-data (datapackage.json), usually covering some concrete topic Eg: "Gold Prices" or "Population Growth Rate In My country" etc. Each Data Package may have zero or more resources and one or more versions.
 
-
-
 Last year a [research project](https://research.okfn.org/spatial-data-package-investigation/) led by Steve Bennett took place in the Open Knowledge community into the whether there is a need for a "Spatial Data Package" specification within the Frictionless Data ecosystem - or whether such specification should be a core part of the Data Package schema. The authors concluded that:
-
-
 
 1. There is significant friction in the uptake of spatial data by non-GIS-expert users. This problem can be addressed by two adding a small amount of metadata, and some data processing conventions to existing Data Package standards.
 2. There is no good solution for a common kind of semi-spatial data, that of tabular data that links to standard boundaries such as administrative or statistical regions. Tabular Data Packages with linked boundary identifiers were proposed.  
 3. For cases where the above solutions do not meet the package creator's need, including raster data or data that is not under the package creator's direct control, improvements to the emerging Spatial Data Package format were proposed.
-
 
 We are supporting and implementing these approaches, doing our own evaluations, and hosting regular exchanges with this group and the geographical information systems (GIS) community in general. By exploiting and developing standards like the Data Package, our platform will be compliant with a rapidly growing ecosystem of data manipulation and verification tools, ensuring that data consistency, provenance and quality can be tested and assured through an open choice of channels and with diverse vendors.
 
@@ -214,17 +209,11 @@ For details visit [research.okfn.org/spatial-data-package-investigation](https:/
 
 Like the DataHub platform that we are inspired by, our project follows a service oriented architecture. It is built from a set of loosely coupled components, each performing distinct functions related to the platform as a whole. We are working on a mix of local datacenter and cloud-based components, but most of our development is focused on online collaboration.
 
-
-
 To implement our initial web application, we used the Python Flask microframework and it's REST-compatible [Flask API](https://www.flaskapi.org/), to generate multi-format routes and Web accessible views of our Frictionless Data-compatible API for developers to use. During an earlier phase, we implemented a Serverless architecture coupled to a Node.js environment.
 
 As a next step we are considering a rewrite in the Python based [Django](https://www.djangoproject.com/) framework, with the [Wagtail](https://wagtail.io) administration and [Django REST](http://www.django-rest-framework.org/) library offering comprehensive support for "data model"-based applications, deep integration with advanced database management systems such as PostgreSQL, and a wealth of out-of-box service and backend components to build on.
 
-
-
 The initial architecture of the project had to quickly evolve through several development phases, and role-based security in a highly scalable implementation, as well as wider API support and search capabilities, will be supported in the next generation platform.
-
-
 
 In the more distant future, our project should be able to move to another framework, another development environment, integrate components from a mix of environments. To this end it is important for us to have flexible and scalable cloud infrastructure. For this reason we are basing our deployment on cloud-scale containerizable technologies like Frictionless Data, Linux and Docker.
 
@@ -248,11 +237,7 @@ Open Street Map (OMS), the single largest repository of crowdsourced geodata, an
 
 Comprehensive Knowledge Archive Network (CKAN), the most widespread form of open data portal, host to thousands of datasets around the world.
 
-
-
 We are currently using the Open Street Map based Mapbox platform to create interactive, high quality renderings of our data science outputs, and we have experimented with a number of other platforms, like OpenLayers, Tangram, Kepler. It is important to us that projects we do are not constrained by a single form of output, that the data could be reinterpreted in diverse ways, not only as 2D maps but also as 3D renderings or tangible objects.
-
-
 
 Beyond compatibility with mapping platforms, we need to ensure that programmatic access to our APIs is a gateway to very different uses of our platform. Early experiences with platforms like Open-DAI, Pelias, Geoplatform and Stae help us evaluate the implications and challenges of successfully opening up our services to agents and algorithms from third parties.
 
