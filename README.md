@@ -1,7 +1,3 @@
-![](cividi.png)
-
-<style type="text/css">h1 { page-break-before:always }</style>
-
 cividi whitepaper
 -----------------
 
@@ -10,7 +6,9 @@ cividi whitepaper
 **cividi** is a civic tech startup applying data science to new challenges in urbanism. Our goal is to help you to better understand the city, and for the city to better understand itself. Located in Switzerland, our focus is on supporting participatory planning processes at any scale, building capacity on top of advanced open data infrastructures, and offering our expertise in participatory spatial planning to customers around the world.
 
 product@cividi.ch
+
 https://cividi.ch
+
 v0.9
 
 ---
@@ -124,15 +122,15 @@ Every day we have the opportunity to create something that has the potential to 
 
 Our design and communication strategy, essential for every civic tech initative, is based on the following core principles.
 
-### User experience comes first.
+### User experience comes first /
 
 Our team has a vested interest, and has already been testing the water over the past year, with a number of approaches to iterating the design and UX that goes into successful information products. A workflow is set up to go from sketches to wireframes to prototypes, and will continue to ensure that investments into technical solutions are backed up by solid design thinking. Partnering with experienced people and local agencies, we will use current methods of design thinking facilitation, A/B testing and focus groups, standard to a user experience engineering practice.
 
-### Design for trust.
+### Design for trust //
 
-The topic of urban growth is contentious, as are new applications for data. Gaining public trust through legal frameworks and advocating for responsible technology is relevant both from a policy standpoint and as an integral part of our design process. This involves foresight activities to anticipate opportunities and challenges, working on legal guidelines and change management with all parts of society, conducting research into the benefits and harms of technologies we introduce, providing clear, understandable information. We see these principles come to life through initiatives like [Better IoT](https://betteriot.wordpress.com/) and [Data trusts](https://theodi.org/article/defining-a-data-trust/), and we wish to be and support other responsible technology projects which develop trust models on the basis of rigorously evaluated formal criteria, created together with inputs from academia, civil society, and practitioners in the field.
+Gaining user and public trust involves foresight activities to anticipate opportunities and challenges, working on legal guidelines and change management with all parts of society, conducting research into the benefits and harms of technologies we introduce, providing clear, understandable information. We see these principles come to life through initiatives like [Better IoT](https://betteriot.wordpress.com/) and [Data trusts](https://theodi.org/article/defining-a-data-trust/), and we wish to be and support other responsible technology projects which develop trust models on the basis of rigorously evaluated formal criteria, created together with inputs from academia, civil society, and practitioners in the field.
 
-### Performance matters.
+### Performance matters ///
 
 We will evaluate and decide on the use of a widely accessible mobile-first user experience/user interface frameworks to develop our solution. Our products will be smooth, stable, minimalist, inviting play and experimentation. We aspire to the level of game design and industrial software when it comes to how intuitive and reliable our tools are in the hands of the users. This means bringing the best software and hardware engineering together into a comprehensively designed product.
 
@@ -144,52 +142,26 @@ We will evaluate and decide on the use of a widely accessible mobile-first user 
 
 This diagram shows a high-level view of the platform architecture that is being developed on the basis of the experience of building our first product, the SmartUse.ch portal. Continuing to build upon our architectural foundation and working through requirements gathering and team-building phases to determine how the platform will be supported long term will be key to making the right decisions.  The following sections describe key concepts of our solution architecture, while next chapter (Frameworks) documents more specific platform components.
 
-### Data flows 🚰
-
-Data processing starts simple. Many data projects start with a download or scraper which collects data from government publications and other web-sites. The fetched data is then processed and combined, and eventually saved to disk (so that people can download the raw data without hassle), loaded to a relational database (so that analysts can do in-depths queries of the data) and pushed to a key-store value (search engine) which serves applications.
-
-The building blocks that we can use to accomplish this at scale are called dataflows, based on the Data Package Pipelines developed at Open Knowledge. These frameworks allow us to write simple 'pipelines', each consisting of a set of predefined processing steps. Most of the pipelines use of a set of common building-blocks, and some custom processors - mainly custom scrapers for exotic sources.  
-
-While we prefer open source environments like Python and open standards like CSV for data aggregation, it is important to us that the sources of data can be as diverse as the tools that we connect to our process. We therefore group these on a project-by-project basis into Factories.
-
-The factory is a core service responsible for running the flows for datasets that are frequently updated and maintained by us at cividi. We are basing this on the factory project at DataHub that uses Datapackage Pipelines, a framework for declarative stream-processing of tabular data, and DataFlows to run the flows through pipelines to process the datasets. We see this as a basic building block for next generation platforms.
-
-In a wider sense, we also see our technical infrastructure grouped around such factories, which are operating on various levels. Initially we will have singular customer engagements, and factories of various sophistication processing data for them. In the future, a factory-of-factories will aggregate the resulting data into the basis for new products and services. Our goal is to co-design an open factory-building process that can be repurposed for various community and 3rd party solutions.
-
-![](http://okfnlabs.org/img/posts/data-factory.png)
-
-_Image from [Data Factory & DataFlows Introduction](http://okfnlabs.org/blog/2018/08/29/data-factory-data-flows-introduction.html) by Adam Kariv_
-
 ### Data standards 🤝
 
-As our primary basis we wish to build on the efforts to deploy central open data portals around the worlds. Closest to us are those of the Swiss federal government, [opendata.swiss](https://opendata.swiss), the Swiss cantons which are also represented there, the City of Zürich [data.stadt-zuerich.ch](https://data.stadt-zuerich.ch) and other forward-thinking communes. Many of these portals are based on the [CKAN software](https://ckan.org) from Open Knowledge that is the forerunner and important basis for Frictionless Data. Notably, CKAN provides a federated model for data exchange whereby metadata published on local portals can be promoted and consistently represented on regional, national and international portals.
-
-
+We wish to build on top of the efforts to deploy open data portals and create data sharing ecosystems around the world. Closest to us are those of the Swiss federal government - [opendata.swiss](https://opendata.swiss), which also represents the Swiss cantons, various government organizations, and cities such as the [City of Zürich](https://data.stadt-zuerich.ch) and other forward-thinking communes. Many such portals are based on the [CKAN software](https://ckan.org) from Open Knowledge. CKAN provides a federated model for data exchange, whereby metadata published on local portals can be promoted and consistently represented on regional, national and international portals.
 
 Going beyond federated open data, Frictionless Data builds on the principles of the Web of Data with a set of standards, and a community building tools on a middle ground between centralized/siloed open data and more widely distributed (Linked Data, IPFS, Blockchain or otherwise transmitted) concepts for data exchange. We are inspired by the principles from the [frictionlessdata.io](http://frictionlessdata.io/specs/) project, excerpted here:
 
+- **Focused:** We have a sharp focus on one part of the data chain, one specific feature – packaging – and a few specific types of data (e.g. tabular).
+- **Web Oriented:** We build for the web using formats that are web "native" such as JSON, work naturally with HTTP such as plain text CSVs (which stream).
+- **Distributed:** we design for a distributed ecosystem with no centralized, single point of failure or dependence.
+- **Open:** Anyone should be able to freely and openly use and reuse what we build. Our community is open to everyone.
+- **Existing Software:** Integrate as easily as possible with existing software both by building integrations and designing for direct use – for example we like CSV because everyone has a tool that can access CSV.
+- **Simple, Lightweight:** Add the minimum, do the least required, keep it simple. For example, use the most basic formats, require only the most essential metadata, data should have nothing extraneous.
 
+The data exchange capabilities of the SmartUse platform and other projects previously developed by the team are based on standards for metadata exchange such as the [Data Package](http://frictionlessdata.io/specs/data-package/), explained further down. We are also already involved in [contributing back](https://frictionlessdata.io/articles/oleg-lavrovsky/) to this community. The main distinguishing features of this approach are:
 
-- Focused: We have a sharp focus on one part of the data chain, one specific feature – packaging – and a few specific types of data (e.g. tabular).
-- Web Oriented: We build for the web using formats that are web "native" such as JSON, work naturally with HTTP such as plain text CSVs (which stream).
-- Distributed: we design for a distributed ecosystem with no centralized, single point of failure or dependence.
-- Open: Anyone should be able to freely and openly use and reuse what we build. Our community is open to everyone.
-- Existing Software: Integrate as easily as possible with existing software both by building integrations and designing for direct use – for example we like CSV because everyone has a tool that can access CSV.
-- Simple, Lightweight: Add the minimum, do the least required, keep it simple. For example, use the most basic formats, require only the most essential metadata, data should have nothing extraneous.
-
-
-From the beginning, the data exchange capabilities of the SmartUse platform are based on standards for metadata exchange such as the [Data Package](http://frictionlessdata.io/specs/data-package/), explained below. We are also already involved in [contributing back](https://frictionlessdata.io/articles/oleg-lavrovsky/) to this community. The main distinguishing features of this approach are:
-
-
-
-- containerization formats for any kind of data to enable simple data publication, transport, and consumption.
-- platform agnostic interoperability of these data packages with various existing tools
-- cutting costs through easier integration and more consistent interpretation of data schema and sourcing
-
+- **containerization formats** for any kind of data to enable simple data publication, transport, and consumption.
+- **platform agnostic interoperability** of these data packages with various existing tools
+- **cutting costs** through easier integration and more consistent interpretation of data schema and sourcing
 
 For a more detailed introduction, visit the [Frictionless Data Field Guide](https://frictionlessdata.io/field-guide/)
-
-
 
 #### Geospatial data standards
 
@@ -205,11 +177,28 @@ We are supporting and implementing these approaches, doing our own evaluations, 
 
 For details visit [research.okfn.org/spatial-data-package-investigation](https://research.okfn.org/spatial-data-package-investigation/)
 
-#### Cloud-ready
+
+### Data flows 🚰
+
+Data processing starts simple. Many data projects begin with a download or scraper, collecting data from government publications and other sites. The fetched data is then processed and combined, and eventually saved to disk (so that people can download the raw data without hassle), loaded to a relational database (so that analysts can do in-depths queries of the data) and pushed to a key-store value (search engine) which serves applications.
+
+The building blocks that we can use to accomplish this at scale are called dataflows, based on the [Data Package Pipelines](https://github.com/frictionlessdata/datapackage-pipelines) from Open Knowledge. These frameworks allow us to write data processing recipes consisting of a set of configurable steps. Most of the pipelines use of a set of common building-blocks, and some custom processors - mainly custom scrapers for exotic sources.
+
+While we prefer open source environments like Python and open standards like CSV for data aggregation, it is important to us that the sources of data can be as diverse as the tools that we connect to our process. We therefore group these on a project-by-project basis into Factories.
+
+The factory is a core service responsible for running the flows for datasets that are frequently updated and maintained. We are basing this on the factory project at [DataHub](https://datahub.io) that uses Datapackage Pipelines, a framework for declarative stream-processing of tabular data, and DataFlows to run the flows through pipelines to process the datasets. We see this as a basic building block for next generation open data platforms.
+
+In a wider sense, we also see our technical infrastructure grouped around such factories, which are operating on various levels. Initially we will have singular customer engagements, and factories of various sophistication processing data for them. In the future, a factory-of-factories will aggregate the resulting data into the basis for new products and services. Our goal is to co-design an open factory-building process that can be repurposed for various community and 3rd party solutions.
+
+![](http://okfnlabs.org/img/posts/data-factory.png)
+
+_Image from [Data Factory & DataFlows Introduction](http://okfnlabs.org/blog/2018/08/29/data-factory-data-flows-introduction.html) by Adam Kariv_
+
+#### Cloud-ready frontend ☁
 
 Like the DataHub platform that we are inspired by, our project follows a service oriented architecture. It is built from a set of loosely coupled components, each performing distinct functions related to the platform as a whole. We are working on a mix of local datacenter and cloud-based components, but most of our development is focused on online collaboration.
 
-To implement our initial web application, we used the Python Flask microframework and it's REST-compatible [Flask API](https://www.flaskapi.org/), to generate multi-format routes and Web accessible views of our Frictionless Data-compatible API for developers to use. During an earlier phase, we implemented a Serverless architecture coupled to a Node.js environment.
+Our initial web application was a microservice architecture based on Node.js and the Express framework, and we later switched to the Python Flask microframework and the REST-compatible [Flask API](https://www.flaskapi.org/), to generate multi-format routes and Web accessible views of our Frictionless Data-compatible API for developers to use at [smartuse.ch](https://smartuse.ch).
 
 As a next step we are considering a rewrite in the Python based [Django](https://www.djangoproject.com/) framework, with the [Wagtail](https://wagtail.io) administration and [Django REST](http://www.django-rest-framework.org/) library offering comprehensive support for "data model"-based applications, deep integration with advanced database management systems such as PostgreSQL, and a wealth of out-of-box service and backend components to build on.
 
@@ -217,7 +206,7 @@ The initial architecture of the project had to quickly evolve through several de
 
 In the more distant future, our project should be able to move to another framework, another development environment, integrate components from a mix of environments. To this end it is important for us to have flexible and scalable cloud infrastructure. For this reason we are basing our deployment on cloud-scale containerizable technologies like Frictionless Data, Linux and Docker.
 
-#### Data science
+#### Data science ☂
 
 For work that is more involving, either in terms of the amounts of data involved, or to involve users and tools from various data science disciplines, we have based our data science work in Jupyter notebooks, which enables the output from tools like Julia and Pandas to be combined with Frictionless Data sources in the optimal way.
 
@@ -229,17 +218,14 @@ An example of our approach to popularizing Data Science could be seen through ou
 
 The Frictionless Data standards detailed in previous sections can be complemented by a variety of connectors to breach gaps in the Web of Data. These include support for some of the following key data sharing ecosystems.
 
-Linked Data (LD) services which are at the avant-garde of the open data movement, enabling intelligence in applications from Google to Wikipedia.
+- Linked Data (LD) services which are at the avant-garde of the open data movement, enabling intelligence in applications from Google to Wikipedia.
+- Web Mapping Services (WMS) which have made the first generation of online geodata services possible, and are continuing to be a key resource for spatial data projects.
+- Open Street Map (OMS), the single largest repository of crowdsourced geodata, and along with it tools and standards for large scale analytics.
+- Comprehensive Knowledge Archive Network (CKAN), the most widespread form of open data portal, host to thousands of datasets around the world.
 
-Web Mapping Services (WMS) which have made the first generation of online geodata services possible, and are continuing to be a key resource for spatial data projects.
+We are currently using the Open Street Map based [Mapbox platform](https://mapbox.com) to create interactive, high quality renderings of our data science outputs, and we have experimented with a number of other platforms, like OpenLayers, Tangram, Kepler. It is important to us that projects we do are not constrained by a single form of output, that the data could be reinterpreted in diverse ways, not only as 2D maps but also as 3D renderings or tangible objects.
 
-Open Street Map (OMS), the single largest repository of crowdsourced geodata, and along with it tools and standards for large scale analytics.
-
-Comprehensive Knowledge Archive Network (CKAN), the most widespread form of open data portal, host to thousands of datasets around the world.
-
-We are currently using the Open Street Map based Mapbox platform to create interactive, high quality renderings of our data science outputs, and we have experimented with a number of other platforms, like OpenLayers, Tangram, Kepler. It is important to us that projects we do are not constrained by a single form of output, that the data could be reinterpreted in diverse ways, not only as 2D maps but also as 3D renderings or tangible objects.
-
-Beyond compatibility with mapping platforms, we need to ensure that programmatic access to our APIs is a gateway to very different uses of our platform. Early experiences with platforms like Open-DAI, Pelias, Geoplatform and Stae help us evaluate the implications and challenges of successfully opening up our services to agents and algorithms from third parties.
+Beyond compatibility with mapping platforms, we need to ensure that programmatic access to our APIs is a gateway to very different uses of our platform. Early experiences with platforms like Open-DAI, Pelias, Geoplatform and Stae have helped us evaluate the implications and challenges of successfully opening up our services to agents and algorithms from third parties.
 
 ---
 
@@ -271,7 +257,7 @@ Project work allows specific questions to be investigated for clients. We will s
 _"Enabling a longer-term functioning of the platform"._
 
 - A payment model must be developed to enable the platform, to allow contributors to participate in the revenues of the platform. This could be done via Smart Contracts with blockchain technology.
-- Accordingly, an institutional format must also be found: Association, Cooperative or something.
+- Accordingly, an institutional format must also be found: Association, Cooperative, ...
 - Accordingly, a model can also be developed in which users (e.g. of mobile telephony or postal services) are involved in the monetization of their data. This could be done in the form of a partnership or with open source tools.
 - Client services are further development and regularized with help of a sales and support team.
 
@@ -281,7 +267,7 @@ _"Activating the potential in the evaluation of data"._
 
 - Data can be used to generate structural indices for the use of urban in this room.
 - The indices can be marketed via user licenses or project work.
-- Participants ("cooperative members") would be compensated for their contributions.
+- Participants ("cooperative members") are compensated for their contributions.
 
 ---
 
