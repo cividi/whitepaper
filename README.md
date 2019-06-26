@@ -3,13 +3,11 @@ cividi whitepaper
 
 # Urban consensus building with open data
 
-**cividi** is a civic tech startup applying data science to new challenges in urbanism. Our goal is to help you to better understand the city, and for the city to better understand itself. Located in Switzerland, our focus is on supporting participatory planning processes at any scale, building capacity on top of advanced open data infrastructures, and offering our expertise in participatory spatial planning to customers around the world.
+**cividi** is a civic tech startup applying data science to challenges in urbanism. Our goal is to help you to better understand the city, and for the city to better understand itself. Located in Switzerland, our focus is on supporting participatory planning processes at any scale, building capacity on top of advanced open data infrastructures, and offering our expertise in participatory spatial planning to customers around the world.
 
 product@cividi.ch
-
 https://cividi.ch
-
-v0.9
+v0.10
 
 ---
 
@@ -29,26 +27,27 @@ v0.9
 
 # Abstract
 
-From the citizen's perspective there is a growing awareness that relationships with the urban planning field should be more like their relationships with vendors in other industries: transparent, open, cooperative, actively managed and predictable. Leading firms are realizing that to stay competitive they *must* change. This is reflected in the shifting dynamics of modern city politics, concerned with ensuring citizen participation. Digital urbanism enables architects, planners, engineers and policymakers to work on data science problems together with the wider citizenry, generating shared insights into what truly makes a city tick.
+From the citizen's perspective, there is a growing awareness that relationships with the urban planning field should be more transparent, open, cooperative, actively managed and predictable. Leading firms are realizing that to stay competitive they must change. This is also reflected in the dynamics of city planning and politics, concerned with ensuring citizen involvement. Participatory urbanism enables architects, planners, engineers and policymakers to work on data science problems together with the wider citizenry - generating shared insights into what truly makes a city tick, and addressing many of these core concerns.
 
-To enable this, new platforms are being built for organizations to connect to their stakeholders, bringing a fresh and transparent approach to negotiations, building a sustainable connection to customers around shared interests. Open source and web accessible tools are making it possible to overcome cost and digital literacy barriers. Urbanists are citizens empowered by public data infrastructure, who are willing to consult information sources to form opinions and help to make better decisions about the future of their city.
+To enable this, new platforms are being built for organizations to connect to their stakeholders, bringing a fresh and transparent approach to negotiations, building a sustainable connection to customers around shared interests. Open source and web accessible tools are making it possible to overcome cost and digital literacy barriers. _Urbanists_ are citizens empowered by public data infrastructure, who are willing to consult information sources to form opinions and help to make better decisions about the future of their city.
 
 Already today we are able to verify the due diligence on architectural plans through open data, connect the dots between local street projects and city-scale investments, explore the science behind the algorithms, participate as citizen urbanists in crowdsourcing, connect our own (open) software and hardware, take part in studies contracted through online markets. What is lacking is a central location to discover, engage, and promote urbanism projects across communities, a place to share best practices, and the infrastructure to get started.
 
-An ideal environment for imagining neighborhoods of the future, is one where the differences of perspective between the planner, architect, data scientist, civic activist are seen as opportunities. By eliminating friction in technical components, enabling participation through data exchange, and motivating collaboration, we build bridges that decrease planning deadlock, increase productivity, and bring cost savings. It is not "rocket science", it is an issue of keeping calm to urbanise sustainably. This is what we do, and we are **cividi**.
+By eliminating friction in technical components, enabling participation through data exchange, and motivating collaboration, we build bridges that decrease planning deadlock, increase productivity, and bring cost savings. An ideal environment for imagining neighborhoods of the future, is one where the differences of perspective between the planner, architect, data scientist, civic activist are seen as opportunities. It is not "rocket science": it is an issue of keeping calm to urbanise sustainably.
+
+This is what we do, and we are **cividi**.
 
 ---
 
 # Who we are
 
-cividi is being launched by a world class urban science team, backed by founders with extensive backgrounds and wide-ranging network. We hold advanced degrees (ETH, Harvard, HSG, Newcastle), bring deep industry experience (architecture & urban systems, business development, data engineering) to the project, as well as the maturity to leverage our interdisciplinary mindsets for the success of a civil society initiative.
+cividi is being launched by a world class urban science team, backed by founders with extensive backgrounds and wide-ranging network. We bring deep industry experience (architecture & urban systems, business development, data engineering), hold advanced degrees (ETH, Harvard, HSG, Newcastle), and the maturity to leverage our interdisciplinary mindsets for the success of a civil society initiative.
 
 * Viktória Molnár
 * Thorben Westerhuys
 * Markus Schaefer
 * Joris Van Wezemael
 * Oleg Lavrovsky
-
 
 ---
 
@@ -58,7 +57,7 @@ Three basic ideas are fundamental this project, which help us to identify the ta
 
 ## I. The future of cities is responsive
 
-Smart Cities are about collecting and managing data, integrating devices, building networks to optimize efficiency of city operations. When diverse sources of information about the city environment are connected together, from non-identifying open datasets are made, the tools are made available to connect the datasets in order to generate evidence - the foundations are laid for what we call a _Smart Use_ of the urban landscape. Adding platforms for civic participation (voluntary or not) leads to _Responsive Cities_, an interplay of people and models to enable specific, real-time and distributed responses to spatial challenges. As the Responsive Web helps with open universal access to global knowledge across diverse browser platforms, by supporting the future development of cities with responsive techniques we are managing complexity and change with the best tools - and in service of the most affected people.
+Smart cities conceptually are about collecting and managing data, integrating devices, building networks to optimize efficiency of city operations. When diverse sources of information about the city environment are connected together, from non-identifying open datasets are made, the tools are made available to connect the datasets in order to generate evidence - the foundations are laid for what we call a _Smart Use_ of the urban landscape. Adding platforms for civic participation leads to _Responsive Use_ - an interplay of voluntary interventions and algorithmic models to enable specific, real-time and distributed responses to spatial challenges. As the Responsive Web helps with open universal access to global knowledge across diverse browser platforms, by supporting the future development of cities with responsive techniques we are managing complexity and change with the best tools - and in service of the most affected people.
 
 ## II. Algorithmic planning needs trust models
 
@@ -67,7 +66,6 @@ From pattern detection of satellite photos, to facial recognition and mobile sig
 ## III. People understand spaces whether they are experts or not
 
 Architectural and urban planning ideas need to quickly reach a wide audience, not only in order to be accepted from a governance perspective, but specifically to have the chance to involve local residents and other stakeholders in the process. Embedding transparency into the development process - open access to project reports, to open source tools and data publications, social media and discussion boards - helps to learn to work with a variety of communication channels. Hackathons (intensive collaborations within strict time constraints) have been the hallmark of open data projects. While the urban design field already includes a number of intervention settings for participative design, civic tech hackathons will add viral potential and technical agility to help to ensure that concerned citizens of all backgrounds can understand and contribute to the spaces and systems - not only the planners, architects, or even data scientists who design them. With this a bridge can be crossed from expert society to the ultimate responsive city: urbanism of the people, by the people, for the people.
-
 
 ---
 
@@ -142,11 +140,13 @@ We will evaluate and decide on the use of a widely accessible mobile-first user 
 
 This diagram shows a high-level view of the platform architecture that is being developed on the basis of the experience of building our first product, the SmartUse.ch portal. Continuing to build upon our architectural foundation and working through requirements gathering and team-building phases to determine how the platform will be supported long term will be key to making the right decisions.  The following sections describe key concepts of our solution architecture, while next chapter (Frameworks) documents more specific platform components.
 
-### Data standards 🤝
+### Geospatial data standards 🤝
 
 We wish to build on top of the efforts to deploy open data portals and create data sharing ecosystems around the world. Closest to us are those of the Swiss federal government - [opendata.swiss](https://opendata.swiss), which also represents the Swiss cantons, various government organizations, and cities such as the [City of Zürich](https://data.stadt-zuerich.ch) and other forward-thinking communes. Many such portals are based on the [CKAN software](https://ckan.org) from Open Knowledge. CKAN provides a federated model for data exchange, whereby metadata published on local portals can be promoted and consistently represented on regional, national and international portals.
 
-Going beyond federated open data, Frictionless Data builds on the principles of the Web of Data with a set of standards, and a community building tools on a middle ground between centralized/siloed open data and more widely distributed (Linked Data, IPFS, Blockchain or otherwise transmitted) concepts for data exchange. We are inspired by the principles from the [frictionlessdata.io](http://frictionlessdata.io/specs/) project, excerpted here:
+Going beyond federated open data, Frictionless Data builds on the principles of the Web of Data with a set of containerization formats for any kind of data to enable simple data publication, transport, and consumption. A community around these standards is building platform agnostic interoperability tools. The frictionless ecosystem is a middle ground between centralized/siloed open data and more widely distributed (Linked Data, IPFS, Blockchain or otherwise transmitted) concepts for data exchange. It prevents great cost benefits through easier integration and more consistent interpretation of data schema and sourcing.
+
+We are inspired by the principles from the [frictionlessdata.io](http://frictionlessdata.io/specs/) project, excerpted here:
 
 - **Focused:** We have a sharp focus on one part of the data chain, one specific feature – packaging – and a few specific types of data (e.g. tabular).
 - **Web Oriented:** We build for the web using formats that are web "native" such as JSON, work naturally with HTTP such as plain text CSVs (which stream).
@@ -155,17 +155,7 @@ Going beyond federated open data, Frictionless Data builds on the principles of 
 - **Existing Software:** Integrate as easily as possible with existing software both by building integrations and designing for direct use – for example we like CSV because everyone has a tool that can access CSV.
 - **Simple, Lightweight:** Add the minimum, do the least required, keep it simple. For example, use the most basic formats, require only the most essential metadata, data should have nothing extraneous.
 
-The data exchange capabilities of the SmartUse platform and other projects previously developed by the team are based on standards for metadata exchange such as the [Data Package](http://frictionlessdata.io/specs/data-package/), explained further down. We are also already involved in [contributing back](https://frictionlessdata.io/articles/oleg-lavrovsky/) to this community. The main distinguishing features of this approach are:
-
-- **containerization formats** for any kind of data to enable simple data publication, transport, and consumption.
-- **platform agnostic interoperability** of these data packages with various existing tools
-- **cutting costs** through easier integration and more consistent interpretation of data schema and sourcing
-
-For a more detailed introduction, visit the [Frictionless Data Field Guide](https://frictionlessdata.io/field-guide/)
-
-#### Geospatial data standards
-
-A Data Package is a simple way of “packaging” up and describing data so that it can be easily shared and used. You can imagine as collection of data and and it's meta-data (datapackage.json), usually covering some concrete topic Eg: "Gold Prices" or "Population Growth Rate In My country" etc. Each Data Package may have zero or more resources and one or more versions.
+A _Data Package_ is a simple way of “packaging” up and describing data so that it can be easily shared and used. You can imagine as collection of data and and it's meta-data (datapackage.json), usually covering some concrete topic Eg: "Gold Prices" or "Population Growth Rate In My country" etc. Each Data Package may have zero or more resources and one or more versions.
 
 Last year a [research project](https://research.okfn.org/spatial-data-package-investigation/) led by Steve Bennett took place in the Open Knowledge community into the whether there is a need for a "Spatial Data Package" specification within the Frictionless Data ecosystem - or whether such specification should be a core part of the Data Package schema. The authors concluded that:
 
@@ -173,9 +163,63 @@ Last year a [research project](https://research.okfn.org/spatial-data-package-in
 2. There is no good solution for a common kind of semi-spatial data, that of tabular data that links to standard boundaries such as administrative or statistical regions. Tabular Data Packages with linked boundary identifiers were proposed.  
 3. For cases where the above solutions do not meet the package creator's need, including raster data or data that is not under the package creator's direct control, improvements to the emerging Spatial Data Package format were proposed.
 
+Here is an excerpt of the [Traffic Signs in Hansbeke](http://data.okfn.org/data/peterdesmet/traffic-signs-hansbeke) Data Package ([datapackage.json](https://github.com/peterdesmet/traffic-signs-hansbeke/blob/master/datapackage.json)) suggested as an example of a GeoJSON dataset extended with Geospatial metadata:
+
+```jsonld
+{
+    "name": "traffic-signs-hansbeke",
+    "title": "Traffic signs of Hansbeke, Nevele, Belgium",
+    "description": "Geospatial dataset of all traffic signs of Hansbeke, Nevele, Belgium. See https://github.com/peterdesmet/traffic-signs-hansbeke for more information.",
+    "keywords": [
+        "traffic signs", "geospatial", "Hansbeke", "Nevele", "Belgium"
+    ],
+    "datapackage_version": "1.0-beta.10",
+    "licenses": [
+        {
+            "type": "cc-zero",
+            "url": "http://creativecommons.org/publicdomain/zero/1.0/"
+        }
+    ],
+    ...
+    "resources": [
+        {
+            "path": "data/traffic-signs-hansbeke.geojson",
+            "name": "traffic-signs-hansbeke",
+            "format": "geojson",
+            "mediatype": "application/json",
+            "schema": {
+                "properties": [
+                    {
+                        "name": "id",
+                        "description": "Record ID.",
+                        "type": "integer"
+                    },
+                    {
+                        "name": "code",
+                        "description": "Belgian traffic sign code.",
+                        "web": "http://wiki.openstreetmap.org/wiki/Road_signs_in_Belgium",
+                        "type": "string"
+                    },
+                    ...
+                    {
+                        "name": "facing",
+                        "description": "Wind direction in which the traffic sign is facing.",
+                        "type": "string",
+                        "values": ["N","E","S","W"]
+                    },
+                    {
+                        "name": "verified",
+                        "description": "True if the existence of the traffic sign has been verified on location.",
+                        "type": "boolean"
+                    }
+                    ...
+```
+
+Here you can see a range of properties, simple for a developer to use and extend in easily readable form - which help to understand the dataset, and suggest how a range of helpful and portable indicators could be embedded for rendering and validating the dataset.
+
 We are supporting and implementing these approaches, doing our own evaluations, and hosting regular exchanges with this group and the geographical information systems (GIS) community in general. By exploiting and developing standards like the Data Package, our platform will be compliant with a rapidly growing ecosystem of data manipulation and verification tools, ensuring that data consistency, provenance and quality can be tested and assured through an open choice of channels and with diverse vendors.
 
-For details visit [research.okfn.org/spatial-data-package-investigation](https://research.okfn.org/spatial-data-package-investigation/)
+The data exchange capabilities of the SmartUse platform and other projects previously developed by the team are based on standards for metadata exchange such as the [Data Package](http://frictionlessdata.io/specs/data-package/). We are also already involved in [contributing back](https://frictionlessdata.io/articles/oleg-lavrovsky/) to this community. For a more detailed introduction, visit the [Frictionless Data Field Guide](https://frictionlessdata.io/field-guide/) and the [Spatial Data Package investigation](https://research.okfn.org/spatial-data-package-investigation/). In addition to this and other examples [at frictionlessdata.io](https://frictionlessdata.io/docs/publish-geo/), visit [datahub.io/loleg](https://datahub.io/loleg/ttn-twist2018-dataset) and [smartuse.ch](https://smartuse.ch) for geodatasets that we have published.
 
 
 ### Data flows 🚰
@@ -194,7 +238,11 @@ In a wider sense, we also see our technical infrastructure grouped around such f
 
 _Image from [Data Factory & DataFlows Introduction](http://okfnlabs.org/blog/2018/08/29/data-factory-data-flows-introduction.html) by Adam Kariv_
 
-#### Cloud-ready frontend ☁
+### Identity 🔑
+
+WIP
+
+### Cloud-ready frontend ☁
 
 Like the DataHub platform that we are inspired by, our project follows a service oriented architecture. It is built from a set of loosely coupled components, each performing distinct functions related to the platform as a whole. We are working on a mix of local datacenter and cloud-based components, but most of our development is focused on online collaboration.
 
