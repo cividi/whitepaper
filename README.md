@@ -17,7 +17,6 @@ v0.10
 - [Principles](#guiding-principles)
 - [Design](#design)
 - [Architecture](#architecture)
-- [Infrastructure](#infrastructure)
 - [Roadmap](#roadmap)
 - [References](#references)
 
@@ -41,7 +40,7 @@ This is what we do, and we are **cividi**.
 
 # Who we are
 
-cividi is being launched by a world class urban science team, backed by founders with extensive backgrounds and wide-ranging network. We bring deep industry experience (architecture & urban systems, business development, data engineering), hold advanced degrees (ETH, Harvard, HSG, Newcastle), and the maturity to leverage our interdisciplinary mindsets for the success of a civil society initiative.
+**cividi** is being launched by a world class urban science team, backed by founders with extensive backgrounds and wide-ranging network. We bring deep industry experience (architecture & urban systems, business development, data engineering), hold advanced degrees (ETH, Harvard, HSG, Newcastle), and the maturity to leverage our interdisciplinary mindsets for the success of a civil society initiative.
 
 * Viktória Molnár
 * Thorben Westerhuys
@@ -57,15 +56,21 @@ Three basic ideas are fundamental this project, which help us to identify the ta
 
 ## I. The future of cities is responsive
 
-Smart cities conceptually are about collecting and managing data, integrating devices, building networks to optimize efficiency of city operations. When diverse sources of information about the city environment are connected together, from non-identifying open datasets are made, the tools are made available to connect the datasets in order to generate evidence - the foundations are laid for what we call a _Smart Use_ of the urban landscape. Adding platforms for civic participation leads to _Responsive Use_ - an interplay of voluntary interventions and algorithmic models to enable specific, real-time and distributed responses to spatial challenges. As the Responsive Web helps with open universal access to global knowledge across diverse browser platforms, by supporting the future development of cities with responsive techniques we are managing complexity and change with the best tools - and in service of the most affected people.
+Smart cities conceptually are about collecting and managing data, integrating devices, building networks to optimize efficiency of city operations. When diverse sources of information about the city environment are connected together, from non-identifying open datasets are made, the tools are made available to connect the datasets in order to generate evidence - the foundations are laid for what we call a _Smart Use_ of the urban landscape.
+
+Adding platforms for civic participation leads to _Responsive Use_ - an interplay of voluntary interventions and algorithmic models to enable specific, real-time and distributed responses to spatial challenges. As the Responsive Web helps with open universal access to global knowledge across diverse browser platforms, by supporting the future development of cities with responsive techniques we are managing complexity and change with the most accessible tools, in service of the most affected people.
 
 ## II. Algorithmic planning needs trust models
 
-From pattern detection of satellite photos, to facial recognition and mobile signal triangulation, there is a wealth of tools available to critically understand the city. Visualizing the discrepancies, commonalities and connections between functional areas, for example, is enabled by access to such information as structured open data, allowing statistical reinterpretation and machine learned classification. Building a Responsive City means putting more minute-to-minute decisions into complicated technological processes which often depend on carefully orchestrated algorithms that need to be proven both for their effective and ethical qualities, whose complexity renders them opaque both to the operator and the affected. Additionally, questions of data ownership and reuse, the rapidly evolving legal conditions for data protection, means that urban systems need to be built to be tamper-proof and explanatory on various levels - with investments into deep foundations for ethical, legal and technical data trust.
+From pattern detection of satellite photos, to facial recognition and mobile signal triangulation, there is a wealth of tools available to critically understand the city. Visualizing the discrepancies, commonalities and connections between functional areas, for example, is enabled by access to such information as structured open data, allowing statistical reinterpretation and machine learned classification.
+
+Responsive Use puts more minute-to-minute decisions into complicated technological processes which often depend on carefully orchestrated algorithms that need to be proven both for their effective and ethical qualities, whose complexity renders them opaque both to the operator and the affected. Additionally, questions of data ownership and reuse, the rapidly evolving legal conditions for data protection, means that urban systems need to be built to be tamper-proof and explanatory on various levels - with investments into deep foundations for ethical, legal and technical data trust.
 
 ## III. People understand spaces whether they are experts or not
 
-Architectural and urban planning ideas need to quickly reach a wide audience, not only in order to be accepted from a governance perspective, but specifically to have the chance to involve local residents and other stakeholders in the process. Embedding transparency into the development process - open access to project reports, to open source tools and data publications, social media and discussion boards - helps to learn to work with a variety of communication channels. Hackathons (intensive collaborations within strict time constraints) have been the hallmark of open data projects. While the urban design field already includes a number of intervention settings for participative design, civic tech hackathons will add viral potential and technical agility to help to ensure that concerned citizens of all backgrounds can understand and contribute to the spaces and systems - not only the planners, architects, or even data scientists who design them. With this a bridge can be crossed from expert society to the ultimate responsive city: urbanism of the people, by the people, for the people.
+Urban planning ideas need to quickly reach a wide audience - not only in order to be accepted from a governance perspective, but specifically to have the chance to involve local residents and other stakeholders in the process. Ideas need diverse frames of reference, key arguments in areas of impact to public health, climate change, economic benefit, and stakeholders will tend to focus on frames specific to their context. Embedding transparency into the development process - open access to project reports, to open source tools and data publications, social media and discussion boards - will be a start, but outreach needs to go beyond communication channels alone.
+
+While the urban design field already includes a number of intervention settings for participative design, innovative methodologies like civic tech hackathons (intensive collaborations within strict time constraints) add viral potential and developmental agility. These provide a competitive arena for platforms, and help to ensure that concerned citizens of all backgrounds can understand and contribute to the spaces and systems themselves - not only through petitioning the planners, architects, or even data scientists who design them. We will cross these bridges to go from expert society, to urbanism of the people, by the people, for the people.
 
 ---
 
@@ -87,9 +92,9 @@ In order to evaluate leading-edge approaches to the technical requirements - and
 
 ### 4/10 Act locally, change globally
 
-Open source married to the DNA of urban systems design, is bringing its own revolution to the way that architecture is conducted, how cities evolve through a constantly reshaped landscape of human and machine transactions. As open source has revolutionized the way that computer technology is developed, making the Internet as we know it today possible, so urban design evolves to become a field within reach of people around the world, open tools create opportunities to contribute to city planning among the many creative ways we use technology to shape the physical world. Our design decisions reflect the meeting of these worlds.
+As open source has revolutionized the way that computer technology is developed and deployed, making the Internet as we know it today possible, so urban design is evolving into a field within reach of people around the world. Open tools create opportunities to contribute to city planning among the many creative ways we use technology to shape the physical world, as cities evolve through a constantly reshaped landscape of human and machine transactions. Our design decisions reflect the meeting of these worlds, and inflect a responsibility to think globally about the potential impact of our tools.
 
-### 5/10 Sustainable interest
+### 5/10 Sustain the interest
 
 Specific mechanisms to incentivize continued contributions of open source code changes, openly licensed data and open content are prioritized as a pillar of the crowd-based approach. Such systems are often built on utility tokens of value (points or other gamification techniques) to motivate the community to contribute and exchange reusable components (e.g. datasets, dataflows, visualizations). At a next stage, these may be enhanced with tenders and bounties supported by cryptographically traceable records such as Smart Contracts. In any case, we need to think from the beginning about how to make sure that the engine of crowd-sourced innovation is well oiled.
 
@@ -99,11 +104,11 @@ The use of Geographic Information Systems (GIS) is a foundational area of our pl
 
 ### 7/10 Enable consumer choice
 
-As the cost efficiency and reliability of this technology continuing to increase, will become a feature of all commercial and open source GIS tools. At this point, platforms like ours will clearly be needed to a widening range of users who are seeking improved accessibility and comparability of the outputs of such techniques. We will provide a central point of comparison and strive to establish guidelines and quality metrics into a comprehensive set of criteria for consumers to benefit from. Platform lock-in and technical monopolies are the enemy of progress.
+As the cost efficiency and reliability of this technology continuing to increase, connected planning may become a feature of all commercial and open source GIS tools. At this point, platforms like ours will be needed to a widening range of users who are seeking improved accessibility and comparability of the outputs of such techniques. A Data Trust needs to provide a central point of comparison for data platforms, striving to establish guidelines and quality metrics into a comprehensive set of criteria for consumers to benefit from. Platform lock-in and monopolies are a barrier to social progress on the wider scale.
 
 ### 8/10 Responsible technology
 
-Our thesis that "Algorithmic planning needs Trust models" is a central tenet of our solution for participative governance, and it needs serious commitment to develop indicators of trust. The idea of Responsible tech centers on concerns around the opacity of the processes and algorithms that are put to use in large scale data-driven projects, and proposes instruments for critical analysis, detection and intervention which can be implemented by individual developers or whole communities.
+Our thesis that "Algorithmic planning needs trust models" is a central tenet of our solution for participative governance, which needs serious commitment to develop indicators of trust. The idea of Responsible Tech centers on concerns around the opacity of the processes and algorithms that are put to use in large scale data-driven projects, and proposes instruments for critical analysis, detection and intervention which can be implemented by individual developers or whole communities.
 
 ### 9/10 We stand on shoulders
 
@@ -138,9 +143,9 @@ We will evaluate and decide on the use of a widely accessible mobile-first user 
 
 ![](platform-birdseye.png)
 
-This diagram shows a high-level view of the platform architecture that is being developed on the basis of the experience of building our first product, the SmartUse.ch portal. Continuing to build upon our architectural foundation and working through requirements gathering and team-building phases to determine how the platform will be supported long term will be key to making the right decisions.  The following sections describe key concepts of our solution architecture, while next chapter (Frameworks) documents more specific platform components.
+This diagram shows a high-level view of the platform architecture that is being developed on the basis of the experience of building our first products. Continuing to build upon our architectural foundation and working through requirements gathering and team-building phases to determine how the platform will be supported long term will be key to making the right decisions.  The following sections describe key concepts of our solution architecture, while next chapter (Frameworks) documents more specific platform components.
 
-### Geospatial data standards 🤝
+## Geospatial data standards 🤝
 
 We wish to build on top of the efforts to deploy open data portals and create data sharing ecosystems around the world. Closest to us are those of the Swiss federal government - [opendata.swiss](https://opendata.swiss), which also represents the Swiss cantons, various government organizations, and cities such as the [City of Zürich](https://data.stadt-zuerich.ch) and other forward-thinking communes. Many such portals are based on the [CKAN software](https://ckan.org) from Open Knowledge. CKAN provides a federated model for data exchange, whereby metadata published on local portals can be promoted and consistently represented on regional, national and international portals.
 
@@ -166,71 +171,67 @@ Last year a [research project](https://research.okfn.org/spatial-data-package-in
 Here is an excerpt of the [Traffic Signs in Hansbeke](http://data.okfn.org/data/peterdesmet/traffic-signs-hansbeke) Data Package ([datapackage.json](https://github.com/peterdesmet/traffic-signs-hansbeke/blob/master/datapackage.json)) suggested as an example of a GeoJSON dataset extended with Geospatial metadata:
 
 ```jsonld
+"name": "traffic-signs-hansbeke",
+"title": "Traffic signs of Hansbeke, Nevele, Belgium",
+"description": "Geospatial dataset of all traffic signs of Hansbeke, Nevele, Belgium. See https://github.com/peterdesmet/traffic-signs-hansbeke for more information.",
+"keywords": [
+    "traffic signs", "geospatial", "Hansbeke", "Nevele", "Belgium"
+],
+"datapackage_version": "1.0-beta.10",
+"licenses": [
 {
+    "type": "cc-zero",
+    "url": "http://creativecommons.org/publicdomain/zero/1.0/"
+}
+],
+...
+"resources": [
+{
+    "path": "data/traffic-signs-hansbeke.geojson",
     "name": "traffic-signs-hansbeke",
-    "title": "Traffic signs of Hansbeke, Nevele, Belgium",
-    "description": "Geospatial dataset of all traffic signs of Hansbeke, Nevele, Belgium. See https://github.com/peterdesmet/traffic-signs-hansbeke for more information.",
-    "keywords": [
-        "traffic signs", "geospatial", "Hansbeke", "Nevele", "Belgium"
-    ],
-    "datapackage_version": "1.0-beta.10",
-    "licenses": [
-        {
-            "type": "cc-zero",
-            "url": "http://creativecommons.org/publicdomain/zero/1.0/"
-        }
-    ],
+    "format": "geojson",
+    "mediatype": "application/json",
+    "schema": { "properties": [
+    {
+        "name": "id",
+        "description": "Record ID.",
+        "type": "integer"
+    },
+    {
+        "name": "code",
+        "description": "Belgian traffic sign code.",
+        "web": "http://wiki.openstreetmap.org/wiki/Road_signs_in_Belgium",
+        "type": "string"
+    },
     ...
-    "resources": [
-        {
-            "path": "data/traffic-signs-hansbeke.geojson",
-            "name": "traffic-signs-hansbeke",
-            "format": "geojson",
-            "mediatype": "application/json",
-            "schema": {
-                "properties": [
-                    {
-                        "name": "id",
-                        "description": "Record ID.",
-                        "type": "integer"
-                    },
-                    {
-                        "name": "code",
-                        "description": "Belgian traffic sign code.",
-                        "web": "http://wiki.openstreetmap.org/wiki/Road_signs_in_Belgium",
-                        "type": "string"
-                    },
-                    ...
-                    {
-                        "name": "facing",
-                        "description": "Wind direction in which the traffic sign is facing.",
-                        "type": "string",
-                        "values": ["N","E","S","W"]
-                    },
-                    {
-                        "name": "verified",
-                        "description": "True if the existence of the traffic sign has been verified on location.",
-                        "type": "boolean"
-                    }
-                    ...
+    {
+        "name": "facing",
+        "description": "Wind direction in which the traffic sign is facing.",
+        "type": "string",
+        "values": ["N","E","S","W"]
+    },
+    {
+        "name": "verified",
+        "description": "True if the existence of the traffic sign has been verified on location.",
+        "type": "boolean"
+    }
+    ...
 ```
 
 Here you can see a range of properties, simple for a developer to use and extend in easily readable form - which help to understand the dataset, and suggest how a range of helpful and portable indicators could be embedded for rendering and validating the dataset.
 
 We are supporting and implementing these approaches, doing our own evaluations, and hosting regular exchanges with this group and the geographical information systems (GIS) community in general. By exploiting and developing standards like the Data Package, our platform will be compliant with a rapidly growing ecosystem of data manipulation and verification tools, ensuring that data consistency, provenance and quality can be tested and assured through an open choice of channels and with diverse vendors.
 
-The data exchange capabilities of the SmartUse platform and other projects previously developed by the team are based on standards for metadata exchange such as the [Data Package](http://frictionlessdata.io/specs/data-package/). We are also already involved in [contributing back](https://frictionlessdata.io/articles/oleg-lavrovsky/) to this community. For a more detailed introduction, visit the [Frictionless Data Field Guide](https://frictionlessdata.io/field-guide/) and the [Spatial Data Package investigation](https://research.okfn.org/spatial-data-package-investigation/). In addition to this and other examples [at frictionlessdata.io](https://frictionlessdata.io/docs/publish-geo/), visit [datahub.io/loleg](https://datahub.io/loleg/ttn-twist2018-dataset) and [smartuse.ch](https://smartuse.ch) for geodatasets that we have published.
+The data exchange capabilities of projects previously developed by the team are based on standards for metadata exchange such as the [Data Package](http://frictionlessdata.io/specs/data-package/). We are involved in [contributing back](https://frictionlessdata.io/articles/oleg-lavrovsky/) to these open standards communities. For more details of the above, see the [Frictionless Data Field Guide](https://frictionlessdata.io/field-guide/) and the [Spatial Data Package investigation](https://research.okfn.org/spatial-data-package-investigation/). In addition to this and other examples [at frictionlessdata.io](https://frictionlessdata.io/docs/publish-geo/), visit [datahub.io/loleg](https://datahub.io/loleg/ttn-twist2018-dataset), [schoolofdata-ch](https://github.com/search?q=topic%3Adatapackage+org%3Aschoolofdata-ch&type=Repositories) and [smartuse.ch](https://smartuse.ch) for Data Packages that we have published.
 
 
 ### Data flows 🚰
 
 Data processing starts simple. Many data projects begin with a download or scraper, collecting data from government publications and other sites. The fetched data is then processed and combined, and eventually saved to disk (so that people can download the raw data without hassle), loaded to a relational database (so that analysts can do in-depths queries of the data) and pushed to a key-store value (search engine) which serves applications.
 
-The building blocks that we can use to accomplish this at scale are called dataflows, based on the [Data Package Pipelines](https://github.com/frictionlessdata/datapackage-pipelines) from Open Knowledge. These frameworks allow us to write data processing recipes consisting of a set of configurable steps. Most of the pipelines use of a set of common building-blocks, and some custom processors - mainly custom scrapers for exotic sources.
+The building blocks that we can use to accomplish this at scale are called _DataFlows_, based on the [Data Package Pipelines](https://github.com/frictionlessdata/datapackage-pipelines) from Open Knowledge. These frameworks allow us to write data processing recipes consisting of a set of configurable steps. Most of the pipelines use of a set of common building-blocks, and some custom processors - mainly custom scrapers for exotic sources.
 
-While we prefer open source environments like Python and open standards like CSV for data aggregation, it is important to us that the sources of data can be as diverse as the tools that we connect to our process. We therefore group these on a project-by-project basis into Factories.
-
-The factory is a core service responsible for running the flows for datasets that are frequently updated and maintained. We are basing this on the factory project at [DataHub](https://datahub.io) that uses Datapackage Pipelines, a framework for declarative stream-processing of tabular data, and DataFlows to run the flows through pipelines to process the datasets. We see this as a basic building block for next generation open data platforms.
+While we prefer open source environments like Python and open standards like CSV for data aggregation, it is important to us that the sources of data can be as diverse as the tools that we connect to our process. We therefore group these on a project-by-project basis into _Factories_. The factory is a core service responsible for running the flows for datasets that are frequently updated and maintained. We are basing this on the factory project at [DataHub](https://datahub.io) that uses Datapackage Pipelines, a framework for declarative stream-processing of tabular data, and DataFlows to run the flows through pipelines to process the datasets. We see this as a basic building block for next generation open data platforms.
 
 In a wider sense, we also see our technical infrastructure grouped around such factories, which are operating on various levels. Initially we will have singular customer engagements, and factories of various sophistication processing data for them. In the future, a factory-of-factories will aggregate the resulting data into the basis for new products and services. Our goal is to co-design an open factory-building process that can be repurposed for various community and 3rd party solutions.
 
@@ -240,27 +241,27 @@ _Image from [Data Factory & DataFlows Introduction](http://okfnlabs.org/blog/201
 
 ### Identity 🔑
 
-WIP
+We are planning to implement an enterprise-grade platform for modern identity into the platforms we are building, featuring Single Sign On for users of established identity services - or the customers, partners and employees on site deployments, centralized feature management, breached passwords detection, easy to use use tools to manage users, multifactor and passwordless authentication, and machine-to-machine security models for communication between APIs and other trusted services.
+
+A topic of heated discussion in the civic tech community, are identity services provided - or, at least, endorsed - by governments. We are tracking developments in this area, potentially to allow seamless participation for first generation 'digital citizens', for example through [SwissID](https://www.swissid.ch/).
+
+Furthermore, as the question of identity services is closely tied to rights management and ownership, a crucial aspect of **cividi** platforms will be the ability to verify users, transfer management and publication rights, provide accreditation for verified users and their publications. Our responsibility is to inherently support the platforms and best practices of the nation to the greatest extent possible.
 
 ### Cloud-ready frontend ☁
 
-Like the DataHub platform that we are inspired by, our project follows a service oriented architecture. It is built from a set of loosely coupled components, each performing distinct functions related to the platform as a whole. We are working on a mix of local datacenter and cloud-based components, but most of our development is focused on online collaboration.
+Our project follows a Service Oriented Architecture built from a set of loosely coupled components, each performing distinct functions related to the platform as a whole. We are working on a mix of local datacenter and cloud-based components. Our initial web applications are microservices based on Node.js and Python Flask microframeworks, using components such as the REST-compatible [Flask API](https://www.flaskapi.org/) to generate multi-format routes for Web access as well as an API for developers to use.
 
-Our initial web application was a microservice architecture based on Node.js and the Express framework, and we later switched to the Python Flask microframework and the REST-compatible [Flask API](https://www.flaskapi.org/), to generate multi-format routes and Web accessible views of our Frictionless Data-compatible API for developers to use at [smartuse.ch](https://smartuse.ch).
+The initial architecture of the project had to quickly evolve through several development phases. Group and role-based security, a highly scalable implementation, as well as wider API support and search capabilities, are goals of the next generation platform. We are considering several frameworks for future development which facilitate administration and offer comprehensive support for "data model"-based applications: such as deep integration with advanced database management systems and a wealth of out-of-box service and backend components to build on.
 
-As a next step we are considering a rewrite in the Python based [Django](https://www.djangoproject.com/) framework, with the [Wagtail](https://wagtail.io) administration and [Django REST](http://www.django-rest-framework.org/) library offering comprehensive support for "data model"-based applications, deep integration with advanced database management systems such as PostgreSQL, and a wealth of out-of-box service and backend components to build on.
+In the more distant future, our project should be able to move to another framework, another development environment, integrate components from a mix of environments. To this end it is important for us to have flexible and scalable cloud infrastructure and focus on standards. For this reason we are basing our deployment on cloud-scale containerization technologies like Frictionless Data, Linux and Docker.
 
-The initial architecture of the project had to quickly evolve through several development phases, and role-based security in a highly scalable implementation, as well as wider API support and search capabilities, will be supported in the next generation platform.
-
-In the more distant future, our project should be able to move to another framework, another development environment, integrate components from a mix of environments. To this end it is important for us to have flexible and scalable cloud infrastructure. For this reason we are basing our deployment on cloud-scale containerizable technologies like Frictionless Data, Linux and Docker.
-
-#### Data science ☂
+### Data science ☂
 
 For work that is more involving, either in terms of the amounts of data involved, or to involve users and tools from various data science disciplines, we have based our data science work in Jupyter notebooks, which enables the output from tools like Julia and Pandas to be combined with Frictionless Data sources in the optimal way.
 
 We started our development process on PostGIS and QGIS, two leading platforms for open source geodata analytics, and are keen to enable support for a wider variety of tools, including ones that are familiar to a wider audience of GIS specialists, empowered and accelerated with modern Data Science platforms that support everything from simple user-driven exploration to Machine Learning approaches.
 
-An example of our approach to popularizing Data Science could be seen through our [presence at Criterion 2019](https://blog.datalets.ch/056/#tangiblecity), where we wanted to put "things" into the hands of visitors that were tangible and even analogue, rather than digital - yet still produced with the kind of spatial analysis and awareness of urban questions that we are working on with Smart Use.
+An example of our approach to popularizing Data Science could be seen through our [presence at Criterion 2019](https://blog.datalets.ch/056/#tangiblecity), where we wanted to put "things" into the hands of visitors that were tangible and even analogue, rather than digital - yet still produced with the kind of spatial analysis and awareness of urban questions.
 
 ### Integration capabilities 🌍
 
@@ -271,7 +272,7 @@ The Frictionless Data standards detailed in previous sections can be complemente
 - Open Street Map (OMS), the single largest repository of crowdsourced geodata, and along with it tools and standards for large scale analytics.
 - Comprehensive Knowledge Archive Network (CKAN), the most widespread form of open data portal, host to thousands of datasets around the world.
 
-We are currently using the Open Street Map based [Mapbox platform](https://mapbox.com) to create interactive, high quality renderings of our data science outputs, and we have experimented with a number of other platforms, like OpenLayers, Tangram, Kepler. It is important to us that projects we do are not constrained by a single form of output, that the data could be reinterpreted in diverse ways, not only as 2D maps but also as 3D renderings or tangible objects.
+We have evaluated integration with a variety of mapping toolkits including the the OpenStreetMap-based [Mapbox platform](https://mapbox.com), OpenLayers, Tangram, Kepler, etc., to create interactive, high quality renderings of our data science outputs. It is important to us that projects we do are not constrained by a single form of output, that the data could be reinterpreted in diverse ways, not only as 2D maps but also as 3D renderings, simple charts, or even tangible objects.
 
 Beyond compatibility with mapping platforms, we need to ensure that programmatic access to our APIs is a gateway to very different uses of our platform. Early experiences with platforms like Open-DAI, Pelias, Geoplatform and Stae have helped us evaluate the implications and challenges of successfully opening up our services to agents and algorithms from third parties.
 
@@ -285,16 +286,11 @@ This section outlines the main milestones we are committed to in this project, a
 
 _"Bringing questions and approaches to the people"._
 
-In our previous project, [Smart Use](https://smartuse.ch), our team built a lightweight framework on which we published a set of spatial stories in the form of Data Packages, based on open source geodata analytics, and with an open API built to Frictionless Data specifications, that is compatible with an emerging ecosystem of tools and processes. The launch of this project in Q2FY19 is the starting point for the development of Cividi.
+During the [Smart Use](https://smartuse.ch) project, our team built a lightweight framework on which we published a set of spatial stories in the form of Data Packages, based on open source geodata analytics, and with an open API built to Frictionless Data specifications to be compatible with an emerging ecosystem of tools and processes. The launch of this project in Q2FY19 is the first goalpost for the development of **cividi**.
 
-![](Cividi 1.0.svg.png)
-_Mock-up of an early idea for a mobile app connected to our platform_
+A stable, functioning, professionally hosted environment and architecture is the next step for launching a Beta platform. Technically, we need to connect a variety data streams, from 'big spatial' data to interfaces to social media, blogs or online news. This means revamping our infrastructure and building our product with enterprise grade components for authentication, automation, search and storage.
 
-A stable, functioning, professionally hosted environment and architecture is the next step for launching a Beta platform. Technically, we need to connect a variety data streams, from big spatial data to interfaces to social media, blogs or online news. This means revamping our infrastructure and building our product with enterprise grade components for authentication, automation, search and storage.
-
-This will be a transition and an opportunity to test many of the tools and technologies we will rely on, to build a presence for the company. We need to launch a company website, on whose newsfeed we can show regular signs of life, pointing to online and IRL (events) activities.
-
-Current application examples on topics of interest to our community should be published in blogs and eventually in the media.
+This will be a transition and an opportunity to test many of the tools and technologies we will rely on, to build a presence for the company. We need to launch a company website, on whose newsfeed we can show regular signs of life, pointing to online and IRL (events) activities. Current application examples on topics of interest to our community should be published in blogs and eventually in the media.
 
 Workshops for municipalities, companies or public authorities should address the issues and approaches and an understanding of the possibilities of Open Data in the Planning of open spaces, quarters and areas can be created.
 
@@ -304,8 +300,8 @@ Project work allows specific questions to be investigated for clients. We will s
 
 _"Enabling a longer-term functioning of the platform"._
 
-- A payment model must be developed to enable the platform, to allow contributors to participate in the revenues of the platform. This could be done via Smart Contracts with blockchain technology.
-- Accordingly, an institutional format must also be found: Association, Cooperative, ...
+- A payment model must be developed to enable the platform, to allow contributors to participate in the revenues of the platform. This could be done, for example, via Smart Contracts with Blockchain technology.
+- Accordingly, an institutional format must also be found for the Data Trust: Association, Cooperative, Collective ... and plans set in motion to align our work with it.
 - Accordingly, a model can also be developed in which users (e.g. of mobile telephony or postal services) are involved in the monetization of their data. This could be done in the form of a partnership or with open source tools.
 - Client services are further development and regularized with help of a sales and support team.
 
@@ -331,3 +327,7 @@ _"Activating the potential in the evaluation of data"._
 -- [Smart cities are boring. Give us responsive cities](https://techcrunch.com/2017/10/14/smart-cities-are-boring-give-us-responsive-cities/) - TechCrunch (Colin O’Donnell 2017)
 
 > _"Maximizing your personal and group potential within the given time and space constraints, instead of meeting arbitrary expectations, makes hackathons well suited to the 21st century knowledge workplace."_ -- [Has Switzerland been infected by the new “Hackathon Mania”?](https://ict.swisscom.ch/2015/11/has-switzerland-been-infected-by-the-new-hackathon-mania/) - Swisscom (Penny Schiffer 2015)
+
+> _"#partizüri ist die Schnittstelle, welche bestehende Plattformen an einem Ort vereint, Inputs und Ideen aus der Bevölkerung sammelt und Städter*innen informiert, involviert und vernetzt. #partizüri ist nun der zentrale Briefkasten für alle Inputs."_ -- [#partizüri – Eine für alle(s)](https://www.urban-equipe.ch/post/partizueri-eine-fuer-alles) - Urban Equipe blog
+
+> _"[Urban planning and public health] both aim to improve human well-being, emphasize needs assessment and service delivery, manage complex social systems, focus at the population level, and rely on community-based participatory methods. Both fields focus on the needs of vulnerable populations."_ -- Kochtitzky CS, et al. [Urban planning and public health at CDC](https://europepmc.org/abstract/med/17183243). MMWR Suppl. 2006 Dec;55(2) 34-38. PMID: 17183243
