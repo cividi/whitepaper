@@ -11,14 +11,16 @@ v0.10
 
 ---
 
-- [Abstract](#abstract)
-- [Who we are](#who-we-are)
-- [(Hypo)theses](#hypotheses)
-- [Principles](#guiding-principles)
-- [Design](#design)
-- [Architecture](#architecture)
-- [Roadmap](#roadmap)
-- [References](#references)
+/// contents
+
+- [Abstract](#Abstract)
+- [Who we are](#Who-we-are)
+- [(Hypo)theses](#Hypotheses)
+- [Principles](#Guiding-principles)
+- [Design](#Design)
+- [Architecture](#Software-Architecture)
+- [Roadmap](#Roadmap)
+- [References](#Quotes-and-citations)
 
 <style type="text/css">h1 { page-break-before:always }</style>
 
@@ -56,9 +58,9 @@ Three basic ideas are fundamental this project, which help us to identify the ta
 
 ## I. The future of cities is responsive
 
-Smart cities conceptually are about collecting and managing data, integrating devices, building networks to optimize efficiency of city operations. When diverse sources of information about the city environment are connected together, from non-identifying open datasets are made, the tools are made available to connect the datasets in order to generate evidence - the foundations are laid for what we call a _Smart Use_ of the urban landscape.
+Smart cities conceptually are about collecting and managing data, integrating devices, building networks to optimize efficiency of city operations. When diverse sources of information about the city environment are aggregated into open datasets, and tools are made available to connect the datasets in order to generate evidence, the foundations are laid for what we call a _Smart Use_ of the urban landscape.
 
-Adding platforms for civic participation leads to _Responsive Use_ - an interplay of voluntary interventions and algorithmic models to enable specific, real-time and distributed responses to spatial challenges. As the Responsive Web helps with open universal access to global knowledge across diverse browser platforms, by supporting the future development of cities with responsive techniques we are managing complexity and change with the most accessible tools, in service of the most affected people.
+Adding platforms for civic participation leads to _Responsive Use_ - an interplay of voluntary interventions and algorithmic models to enable specific, real-time and distributed responses to spatial challenges. As Responsive web design helps with open universal access to global knowledge across diverse browser platforms, by supporting the future development of cities in such a way, we are managing complexity and change with the most accessible tools, in service of the most affected people.
 
 ## II. Algorithmic planning needs trust models
 
@@ -70,7 +72,7 @@ Responsive Use puts more minute-to-minute decisions into complicated technologic
 
 Urban planning ideas need to quickly reach a wide audience - not only in order to be accepted from a governance perspective, but specifically to have the chance to involve local residents and other stakeholders in the process. Ideas need diverse frames of reference, key arguments in areas of impact to public health, climate change, economic benefit, and stakeholders will tend to focus on frames specific to their context. Embedding transparency into the development process - open access to project reports, to open source tools and data publications, social media and discussion boards - will be a start, but outreach needs to go beyond communication channels alone.
 
-While the urban design field already includes a number of intervention settings for participative design, innovative methodologies like civic tech hackathons (intensive collaborations within strict time constraints) add viral potential and developmental agility. These provide a competitive arena for platforms, and help to ensure that concerned citizens of all backgrounds can understand and contribute to the spaces and systems themselves - not only through petitioning the planners, architects, or even data scientists who design them. We will cross these bridges to go from expert society, to urbanism of the people, by the people, for the people.
+While the urban design field already includes a number of intervention settings for participative design, innovative methodologies like civic tech hackathons (intensive collaborations within strict time constraints) add viral potential and developmental agility. These provide a competitive arena for platforms, help the planners and architects, and enable concerned citizens of all backgrounds to understand and contribute to spatial systems themselves. We are crossing these bridges to go from an expert society that is increasingly overwhelmed by complexity, to scalable urbanism of the people, by the people, for the people.
 
 ---
 
@@ -100,7 +102,7 @@ Specific mechanisms to incentivize continued contributions of open source code c
 
 ### 6/10 Automate spatial analysis
 
-The use of Geographic Information Systems (GIS) is a foundational area of our platform. Developments in remote sensing, in particular the proliferation of wide-scale, high resolution, and near-time satellite imagery, have led to notable developments in automating the analysis of land use patterns from crop yields to parking lot occupancy. Online marketplaces and data exchanges are already a key instrument to improve and widen the reach of automated spatial analysis (ASA) technology. Few are able to take into account the speed at which Machine Learning and Open Data are advancing the state of the art and apply it in practice, and this is our competitive edge.
+The applied use of Geographic Information Systems (GIS) and Information Modelling (e.g. BIM - Building Information Modeling, UDIM - Urban Design Information Modeling, ...) is a foundational area of our platform. Developments in remote sensing, such as the proliferation of wide-scale, high resolution, and near-time satellite imagery, or low-cost low-power sensors, have led to notable acceleration of capabilities in the analysis of land use patterns from crop yields to parking lot occupancy. Online marketplaces and data exchanges are already a key instrument to improve and widen the reach of automated spatial analysis (ASA) technology. As machine learning and advanced networking advances the state of the art, the ability to republish such data openly for transparent spatial analysis remains a crucial goal.
 
 ### 7/10 Enable consumer choice
 
@@ -131,7 +133,11 @@ Our team has a vested interest, and has already been testing the water over the 
 
 ### Design for trust //
 
-Gaining user and public trust involves foresight activities to anticipate opportunities and challenges, working on legal guidelines and change management with all parts of society, conducting research into the benefits and harms of technologies we introduce, providing clear, understandable information. We see these principles come to life through initiatives like [Better IoT](https://betteriot.wordpress.com/) and [Data trusts](https://theodi.org/article/defining-a-data-trust/), and we wish to be and support other responsible technology projects which develop trust models on the basis of rigorously evaluated formal criteria, created together with inputs from academia, civil society, and practitioners in the field.
+As the our first Guiding Principle suggests, in providing feedback to communities in terms of data analysis it will be valuable to listen to their constituents, ask questions, give not just data-driven but people-driven insights priority. From a design perspective, this will mean overcoming barriers of trust, formulating questions in terms of personal data, strategizing business model alignment versus the initial reaction to hoard my data.
+
+Gaining user and public trust involves foresight activities to anticipate opportunities and challenges, working on legal guidelines and change management with all parts of society, conducting research into the benefits and harms of technologies we introduce, providing clear, understandable information.
+
+We see these principles come to life through initiatives like [Better IoT](https://betteriot.wordpress.com/) and [Data trusts](https://theodi.org/article/defining-a-data-trust/), and we wish to be and support other responsible technology projects which develop trust models on the basis of rigorously evaluated formal criteria, created together with inputs from academia, civil society, and practitioners in the field.
 
 ### Performance matters ///
 
@@ -139,7 +145,7 @@ We will evaluate and decide on the use of a widely accessible mobile-first user 
 
 ---
 
-# Architecture
+# Software Architecture
 
 ![](platform-birdseye.png)
 
@@ -243,9 +249,11 @@ _Image from [Data Factory & DataFlows Introduction](http://okfnlabs.org/blog/201
 
 We are planning to implement an enterprise-grade platform for modern identity into the platforms we are building, featuring Single Sign On for users of established identity services - or the customers, partners and employees on site deployments, centralized feature management, breached passwords detection, easy to use use tools to manage users, multifactor and passwordless authentication, and machine-to-machine security models for communication between APIs and other trusted services.
 
-A topic of heated discussion in the civic tech community, are identity services provided - or, at least, endorsed - by governments. We are tracking developments in this area, potentially to allow seamless participation for first generation 'digital citizens', for example through [SwissID](https://www.swissid.ch/).
+Furthermore, as the goal of our project is to understand the city, and for the city to understand itself, a key element in our identity concept is that the city is serving its citizens, and identity is becoming an essential part of the digital infrastructure of a city. Indeed, many civic tech projects rely on identity services provided (or, at least, secured or endorsed) by governments. We are tracking developments in this area, potentially to allow seamless participation for first generation 'digital citizens' on platforms such as [SwissID](https://www.swissid.ch/).
 
-Furthermore, as the question of identity services is closely tied to rights management and ownership, a crucial aspect of **cividi** platforms will be the ability to verify users, transfer management and publication rights, provide accreditation for verified users and their publications. Our responsibility is to inherently support the platforms and best practices of the nation to the greatest extent possible.
+As the question of identity services is closely tied to rights management and thereby digital ownership, a crucial aspect of **cividi** platforms will be the ability to verify users, transfer management and publication rights, provide accreditation and recognize contributions of verified users. In this we are inspired by the [Proof of Stake](https://en.wikipedia.org/wiki/Proof_of_stake) of blockchain systems, although at time of writing we have not decided to technically commit to this approach.
+
+Our civic responsibility here is to inherently support - indeed to participate in shaping - the platforms and best practices of the nation to the greatest extent possible.
 
 ### Cloud-ready frontend ☁
 
@@ -329,5 +337,7 @@ _"Activating the potential in the evaluation of data"._
 > _"Maximizing your personal and group potential within the given time and space constraints, instead of meeting arbitrary expectations, makes hackathons well suited to the 21st century knowledge workplace."_ -- [Has Switzerland been infected by the new “Hackathon Mania”?](https://ict.swisscom.ch/2015/11/has-switzerland-been-infected-by-the-new-hackathon-mania/) - Swisscom (Penny Schiffer 2015)
 
 > _"#partizüri ist die Schnittstelle, welche bestehende Plattformen an einem Ort vereint, Inputs und Ideen aus der Bevölkerung sammelt und Städter*innen informiert, involviert und vernetzt. #partizüri ist nun der zentrale Briefkasten für alle Inputs."_ -- [#partizüri – Eine für alle(s)](https://www.urban-equipe.ch/post/partizueri-eine-fuer-alles) - Urban Equipe blog
+
+> _"You don't want to be equal, you want to be fair...about rebalancing interests."_ -- Paul-Olivier Dehaye
 
 > _"[Urban planning and public health] both aim to improve human well-being, emphasize needs assessment and service delivery, manage complex social systems, focus at the population level, and rely on community-based participatory methods. Both fields focus on the needs of vulnerable populations."_ -- Kochtitzky CS, et al. [Urban planning and public health at CDC](https://europepmc.org/abstract/med/17183243). MMWR Suppl. 2006 Dec;55(2) 34-38. PMID: 17183243
