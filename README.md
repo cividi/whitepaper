@@ -255,13 +255,17 @@ As the question of identity services is closely tied to rights management and th
 
 Our civic responsibility here is to inherently support - indeed to participate in shaping - the platforms and best practices of the nation to the greatest extent possible.
 
-### Cloud-ready frontend ☁
+### Cloud architecture ☁
 
 Our project follows a Service Oriented Architecture built from a set of loosely coupled components, each performing distinct functions related to the platform as a whole. We are working on a mix of local datacenter and cloud-based components. Our initial web applications are microservices based on Node.js and Python Flask microframeworks, using components such as the REST-compatible [Flask API](https://www.flaskapi.org/) to generate multi-format routes for Web access as well as an API for developers to use.
 
 The initial architecture of the project had to quickly evolve through several development phases. Group and role-based security, a highly scalable implementation, as well as wider API support and search capabilities, are goals of the next generation platform. We are considering several frameworks for future development which facilitate administration and offer comprehensive support for "data model"-based applications: such as deep integration with advanced database management systems and a wealth of out-of-box service and backend components to build on.
 
 In the more distant future, our project should be able to move to another framework, another development environment, integrate components from a mix of environments. To this end it is important for us to have flexible and scalable cloud infrastructure and focus on standards. For this reason we are basing our deployment on cloud-scale containerization technologies like Frictionless Data, Linux and Docker.
+
+Our current production environment is a set of Linux virtual private servers (VPS) nodes, hosted in a Frankfurt datacenter by the UK based [Linode](https://linode.com). On these we run development and production application code, data science projects, deploy experimental and shared software packages. Public cloud-hosted databases are being managed for us securely by [84codes](https://www.84codes.com/), a reliable Swedish tech company. For sensitive data, static deployments and e-mail accounts, we use the services of [METANET](https://metanet.ch) - an established provider in Zürich. Our web-facing components are proxied and accelerated by [CloudFlare](http://cloudflare.com/).
+
+Going forward, we are evaluating various containerization and monitoring platforms, for example to improve the way we use and manage our [Docker](https://docker.com) containers. Next generation data science application are typically built using microservice frameworks and tightly orchestrated deployments with continuous integration. This is particularly key to scaling on-demand services like data acquisition and processing jobs. 
 
 ### Data science ☂
 
