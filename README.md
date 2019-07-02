@@ -1,13 +1,15 @@
 cividi whitepaper
 -----------------
 
-# Urban consensus building with open data
+# Consensus building by opening data for cities
 
 **cividi** is a civic tech startup applying data science to challenges in urbanism. Our goal is to help you to better understand the city, and for the city to better understand itself. Located in Switzerland, our focus is on supporting participatory planning processes at any scale, building capacity on top of advanced open data infrastructures, and offering our expertise in participatory spatial planning to customers around the world.
 
 product@cividi.ch
+
 https://cividi.ch
-v0.10
+
+v0.11
 
 ---
 
@@ -16,11 +18,11 @@ v0.10
 - [Abstract](#Abstract)
 - [Who we are](#Who-we-are)
 - [(Hypo)theses](#Hypotheses)
-- [Principles](#Guiding-principles)
-- [Design](#Design)
-- [Architecture](#Software-Architecture)
+- [Guiding principles](#Guiding-principles)
+- [Design strategy](#Design-strategy)
+- [Data architecture](#Data-architecture)
 - [Roadmap](#Roadmap)
-- [References](#Quotes-and-citations)
+- [Citations](#Citations)
 
 <style type="text/css">h1 { page-break-before:always }</style>
 
@@ -28,13 +30,11 @@ v0.10
 
 # Abstract
 
-From the citizen's perspective, there is a growing awareness that relationships with the urban planning field should be more transparent, open, cooperative, actively managed and predictable. Leading firms are realizing that to stay competitive they must change. This is also reflected in the dynamics of city planning and politics, concerned with ensuring citizen involvement. Participatory urbanism enables architects, planners, engineers and policymakers to work on data science problems together with the wider citizenry - generating shared insights into what truly makes a city tick, and addressing many of these core concerns.
+From the citizen's perspective, there is a growing awareness that relationships with the urban planning field should be more transparent, open, cooperative, actively managed and predictable. This is reflected in the dynamics of city planning and politics, concerned with ensuring citizen involvement. Participatory urbanism enables forward-thinking architects, planners, engineers and policymakers to work on data science problems together with the wider citizenry - generating shared insights into what truly makes a city tick, and legitimately addressing many of these core concerns.
 
 To enable this, new platforms are being built for organizations to connect to their stakeholders, bringing a fresh and transparent approach to negotiations, building a sustainable connection to customers around shared interests. Open source and web accessible tools are making it possible to overcome cost and digital literacy barriers. _Urbanists_ are citizens empowered by public data infrastructure, who are willing to consult information sources to form opinions and help to make better decisions about the future of their city.
 
-Already today we are able to verify the due diligence on architectural plans through open data, connect the dots between local street projects and city-scale investments, explore the science behind the algorithms, participate as citizen urbanists in crowdsourcing, connect our own (open) software and hardware, take part in studies contracted through online markets. What is lacking is a central location to discover, engage, and promote urbanism projects across communities, a place to share best practices, and the infrastructure to get started.
-
-By eliminating friction in technical components, enabling participation through data exchange, and motivating collaboration, we build bridges that decrease planning deadlock, increase productivity, and bring cost savings. An ideal environment for imagining neighborhoods of the future, is one where the differences of perspective between the planner, architect, data scientist, civic activist are seen as opportunities. It is not "rocket science": it is an issue of keeping calm to urbanise sustainably.
+By eliminating friction in technical components, enabling participation through data exchange, and motivating collaboration, we build bridges that decrease planning deadlock, increase productivity, and bring cost savings. An ideal environment for imagining neighborhoods of the future, is one where the differences of perspective between the planner, architect, data scientist, civic activist are seen as opportunities to urbanise sustainably.
 
 This is what we do, and we are **cividi**.
 
@@ -52,9 +52,41 @@ This is what we do, and we are **cividi**.
 
 ---
 
+# Context
+
+Our cities are environment, infrastructure, medium and format for our prosperous, culturally rich and comparatively safe lives.
+
+Over many hundreds, even thousands of years of urban development we learned how to organize cities into public and private spaces, build squares, roads, parks and buildings, or install laws, regulations and political processes to make them work. Cities are the spatial syntax for the relationships that make up our culture and economy. We meet in cities to exchange gossip or experiences, to trade ideas or goods. We are linked to our cities with our home or business address that establish our identity and let us conduct our civic and economic lives. At least ideally, spaces, concerns and governance are aligned.
+
+Digitalization introduces entirely new infrastructures, address protocols, algorithmic processes or services to urban spaces, many provided by private entities. The digital is a versatile, adaptable and powerful syntax for relationships. Each relation is computationally addressed and hence trackable. This generates vast amounts of relational data – like stacks of used postal envelopes piling up. Sifting through this data allows for analyzing past choices and predicting future ones. Increasingly data points have not only a time, but also a location stamp. Analyzing them reveals functions and uses in space.
+
+The spatial syntax of cities is largely a public domain. The computational syntax of digital networks is not. We pay for connectivity and convenience by selling our choices – past and future.
+
+Digitalization gives us great power and connectivity. But it also disrupts markets, multiplies identities, questions privacy, challenges sovereignty and splinters the public domain. Spaces, concerns and governance are drifting apart.
+
+## Mission
+
+Historically, those urban cultures seemed to have worked best that balanced top down control and private initiative, that relied on transparency, cooperation and a strong public domain. Today, when the urban age meets the digital, these virtues are to be renegotiated.
+
+Cividi supports a cooperative development of our cities, settlements and landscapes by working towards a digitally enabled public domain. It realigns spaces, concerns and governance.
+
+### Spaces
+
+Cividi organizes data according to a standardized understanding of space, its relations and its dynamics.
+
+### Concerns
+
+Cividi aggregates and visualizes data from heterogeneous sources and allows for the publication of user data and initiatives.
+
+### Governance
+
+Cividi supports participation by establishing access, identity and stake.
+
+---
+
 # (Hypo)theses
 
-Three basic ideas are fundamental this project, which help us to identify the target audience, and to focus our challenges on the longer timescale.
+Three basic ideas are fundamental to this project, which help us to identify the target audience, and to focus our challenges on the longer timescale.
 
 ## I. The future of cities is responsive
 
@@ -68,7 +100,7 @@ From pattern detection of satellite photos, to facial recognition and mobile sig
 
 Responsive Use puts more minute-to-minute decisions into complicated technological processes which often depend on carefully orchestrated algorithms that need to be proven both for their effective and ethical qualities, whose complexity renders them opaque both to the operator and the affected. Additionally, questions of data ownership and reuse, the rapidly evolving legal conditions for data protection, means that urban systems need to be built to be tamper-proof and explanatory on various levels - with investments into deep foundations for ethical, legal and technical data trust.
 
-## III. People understand spaces whether they are experts or not
+## III. People understand spaces, whether experts or not
 
 Urban planning ideas need to quickly reach a wide audience - not only in order to be accepted from a governance perspective, but specifically to have the chance to involve local residents and other stakeholders in the process. Ideas need diverse frames of reference, key arguments in areas of impact to public health, climate change, economic benefit, and stakeholders will tend to focus on frames specific to their context. Embedding transparency into the development process - open access to project reports, to open source tools and data publications, social media and discussion boards - will be a start, but outreach needs to go beyond communication channels alone.
 
@@ -78,7 +110,7 @@ While the urban design field already includes a number of intervention settings 
 
 # Guiding principles
 
-At the launch of any new initiative it is important to state a set of principles clarifying the vision of management. As we are a Civic Tech initiative that strives to provoke and complement developments in the legal and political field, we are acutely aware of the role that governance plays in our idea - and are therefore following closely the developments of new ethical, philosophic and regulatory frameworks around the idea of 'humane' or responsible technology. Details are presented in the following ten guiding principles.
+We are a Civic Tech initiative that strives to provoke and complement developments in the legal and political field, acutely aware of the role that ethics and governance plays in our idea - and are therefore following closely the developments of philosophic and regulatory frameworks around the idea of 'humane' or responsible technology. Details of our management vision in this regard are presented in the following ten guiding principles.
 
 ### 1/10 Crowd-based
 
@@ -106,7 +138,7 @@ The applied use of Geographic Information Systems (GIS) and Information Modellin
 
 ### 7/10 Enable consumer choice
 
-As the cost efficiency and reliability of this technology continuing to increase, connected planning may become a feature of all commercial and open source GIS tools. At this point, platforms like ours will be needed to a widening range of users who are seeking improved accessibility and comparability of the outputs of such techniques. A Data Trust needs to provide a central point of comparison for data platforms, striving to establish guidelines and quality metrics into a comprehensive set of criteria for consumers to benefit from. Platform lock-in and monopolies are a barrier to social progress on the wider scale.
+As the cost efficiency and reliability of this technology continue to increase, connected planning may become a feature of all commercial and open source GIS tools. At this point, platforms like ours will be needed to a widening range of users who are seeking improved accessibility and comparability of the outputs of such techniques. A Data Trust needs to provide a central point of comparison for data platforms, striving to establish guidelines and quality metrics into a comprehensive set of criteria for consumers to benefit from. Platform lock-in and monopolies are a barrier to social progress on the wider scale.
 
 ### 8/10 Responsible technology
 
@@ -120,12 +152,11 @@ In all of our work we are standing on the shoulders of giants: for example, in t
 
 Every day we have the opportunity to create something that has the potential to be the ethical compass for someone making a key decision that will influence the development of institutions or neighbourhoods around the world. Our platform for participative governance may play a pivotal role in the way digitally enhanced discussions of urban planning run in 2020 and beyond - if we let it. Efficiency and profitability are a means to an end, not the goal.
 
-
 ---
 
-# Design
+# Design strategy
 
-Our design and communication strategy, essential for every civic tech initative, is based on the following core principles.
+Today we should be able to verify due diligence on architectural plans through data, connect the dots between local street projects and city-scale investments, explore the science behind algorithms, participate as citizen urbanists in crowdsourcing, connect our own (open) software and hardware, take part in studies on- and offline. What is lacking is a well designed, central location to discover, engage, and promote this across communities, a good place to share best practices, and shared infrastructure. Our design strategy to overcome these barriers is based on the following core principles.
 
 ### User experience comes first /
 
@@ -145,13 +176,13 @@ We will evaluate and decide on the use of a widely accessible mobile-first user 
 
 ---
 
-# Software Architecture
+# Data architecture
 
 ![](platform-birdseye.png)
 
 This diagram shows a high-level view of the platform architecture that is being developed on the basis of the experience of building our first products. Continuing to build upon our architectural foundation and working through requirements gathering and team-building phases to determine how the platform will be supported long term will be key to making the right decisions.  The following sections describe key concepts of our solution architecture, while next chapter (Frameworks) documents more specific platform components.
 
-## Geospatial data standards 🤝
+## Geospatial data standards
 
 We wish to build on top of the efforts to deploy open data portals and create data sharing ecosystems around the world. Closest to us are those of the Swiss federal government - [opendata.swiss](https://opendata.swiss), which also represents the Swiss cantons, various government organizations, and cities such as the [City of Zürich](https://data.stadt-zuerich.ch) and other forward-thinking communes. Many such portals are based on the [CKAN software](https://ckan.org) from Open Knowledge. CKAN provides a federated model for data exchange, whereby metadata published on local portals can be promoted and consistently represented on regional, national and international portals.
 
@@ -166,13 +197,15 @@ We are inspired by the principles from the [frictionlessdata.io](http://friction
 - **Existing Software:** Integrate as easily as possible with existing software both by building integrations and designing for direct use – for example we like CSV because everyone has a tool that can access CSV.
 - **Simple, Lightweight:** Add the minimum, do the least required, keep it simple. For example, use the most basic formats, require only the most essential metadata, data should have nothing extraneous.
 
-A _Data Package_ is a simple way of “packaging” up and describing data so that it can be easily shared and used. You can imagine as collection of data and and it's meta-data (datapackage.json), usually covering some concrete topic Eg: "Gold Prices" or "Population Growth Rate In My country" etc. Each Data Package may have zero or more resources and one or more versions.
+A _Data Package_ is a simple way of “packaging” up and describing data so that it can be easily shared and used. You can imagine it as collection of data and it's meta-data (`datapackage.json`), usually covering some concrete topic Eg: "Gold Prices" or "Population Growth Rate In My country" etc. Each Data Package may have zero or more resources and one or more versions.
 
 Last year a [research project](https://research.okfn.org/spatial-data-package-investigation/) led by Steve Bennett took place in the Open Knowledge community into the whether there is a need for a "Spatial Data Package" specification within the Frictionless Data ecosystem - or whether such specification should be a core part of the Data Package schema. The authors concluded that:
 
-1. There is significant friction in the uptake of spatial data by non-GIS-expert users. This problem can be addressed by two adding a small amount of metadata, and some data processing conventions to existing Data Package standards.
-2. There is no good solution for a common kind of semi-spatial data, that of tabular data that links to standard boundaries such as administrative or statistical regions. Tabular Data Packages with linked boundary identifiers were proposed.  
+1. There is significant friction in the uptake of spatial data by non-GIS-expert users. This problem can be addressed by adding a small amount of metadata, and some data processing conventions to existing Data Package standards.
+2. There is no good solution for a common kind of semi-spatial data, like that of tabular data that links to standard boundaries such as administrative or statistical regions. Tabular Data Packages with linked boundary identifiers were proposed.  
 3. For cases where the above solutions do not meet the package creator's need, including raster data or data that is not under the package creator's direct control, improvements to the emerging Spatial Data Package format were proposed.
+
+Based on the  basic properties of location, time and relation, new properties can be defined such as movement (a change of location over time), clusters (several locations in close relation) or emergence (the change of relation over time).
 
 Here is an excerpt of the [Traffic Signs in Hansbeke](http://data.okfn.org/data/peterdesmet/traffic-signs-hansbeke) Data Package ([datapackage.json](https://github.com/peterdesmet/traffic-signs-hansbeke/blob/master/datapackage.json)) suggested as an example of a GeoJSON dataset extended with Geospatial metadata:
 
@@ -230,12 +263,11 @@ We are supporting and implementing these approaches, doing our own evaluations, 
 
 The data exchange capabilities of projects previously developed by the team are based on standards for metadata exchange such as the [Data Package](http://frictionlessdata.io/specs/data-package/). We are involved in [contributing back](https://frictionlessdata.io/articles/oleg-lavrovsky/) to these open standards communities. For more details of the above, see the [Frictionless Data Field Guide](https://frictionlessdata.io/field-guide/) and the [Spatial Data Package investigation](https://research.okfn.org/spatial-data-package-investigation/). In addition to this and other examples [at frictionlessdata.io](https://frictionlessdata.io/docs/publish-geo/), visit [datahub.io/loleg](https://datahub.io/loleg/ttn-twist2018-dataset), [schoolofdata-ch](https://github.com/search?q=topic%3Adatapackage+org%3Aschoolofdata-ch&type=Repositories) and [smartuse.ch](https://smartuse.ch) for Data Packages that we have published.
 
-
-### Data flows 🚰
+### Data flows
 
 Data processing starts simple. Many data projects begin with a download or scraper, collecting data from government publications and other sites. The fetched data is then processed and combined, and eventually saved to disk (so that people can download the raw data without hassle), loaded to a relational database (so that analysts can do in-depths queries of the data) and pushed to a key-store value (search engine) which serves applications.
 
-The building blocks that we can use to accomplish this at scale are called _DataFlows_, based on the [Data Package Pipelines](https://github.com/frictionlessdata/datapackage-pipelines) from Open Knowledge. These frameworks allow us to write data processing recipes consisting of a set of configurable steps. Most of the pipelines use of a set of common building-blocks, and some custom processors - mainly custom scrapers for exotic sources.
+The building blocks that we can use to accomplish this at scale are called _DataFlows_, based on the [Data Package Pipelines](https://github.com/frictionlessdata/datapackage-pipelines) from Open Knowledge. These frameworks allow us to write data processing recipes consisting of a set of configurable steps. Most of the pipelines use a set of common building-blocks, and some custom processors - mainly custom scrapers for exotic sources.
 
 While we prefer open source environments like Python and open standards like CSV for data aggregation, it is important to us that the sources of data can be as diverse as the tools that we connect to our process. We therefore group these on a project-by-project basis into _Factories_. The factory is a core service responsible for running the flows for datasets that are frequently updated and maintained. We are basing this on the factory project at [DataHub](https://datahub.io) that uses Datapackage Pipelines, a framework for declarative stream-processing of tabular data, and DataFlows to run the flows through pipelines to process the datasets. We see this as a basic building block for next generation open data platforms.
 
@@ -245,9 +277,9 @@ In a wider sense, we also see our technical infrastructure grouped around such f
 
 _Image from [Data Factory & DataFlows Introduction](http://okfnlabs.org/blog/2018/08/29/data-factory-data-flows-introduction.html) by Adam Kariv_
 
-### Identity 🔑
+### Identity
 
-We are planning to implement an enterprise-grade platform for modern identity into the platforms we are building, featuring Single Sign On for users of established identity services - or the customers, partners and employees on site deployments, centralized feature management, breached passwords detection, easy to use use tools to manage users, multifactor and passwordless authentication, and machine-to-machine security models for communication between APIs and other trusted services.
+We are planning to implement an enterprise-grade platform for modern identity into the platforms we are building, featuring Single Sign On for users of established identity services - or the customers, partners and employees, on-site deployments, centralized feature management, breached passwords detection, easy to use use tools to manage users, multifactor and passwordless authentication, and machine-to-machine security models for communication between APIs and other trusted services.
 
 Furthermore, as the goal of our project is to understand the city, and for the city to understand itself, a key element in our identity concept is that the city is serving its citizens, and identity is becoming an essential part of the digital infrastructure of a city. Indeed, many civic tech projects rely on identity services provided (or, at least, secured or endorsed) by governments. We are tracking developments in this area, potentially to allow seamless participation for first generation 'digital citizens' on platforms such as [SwissID](https://www.swissid.ch/).
 
@@ -255,7 +287,7 @@ As the question of identity services is closely tied to rights management and th
 
 Our civic responsibility here is to inherently support - indeed to participate in shaping - the platforms and best practices of the nation to the greatest extent possible.
 
-### Cloud architecture ☁
+### Service architecture
 
 Our project follows a Service Oriented Architecture built from a set of loosely coupled components, each performing distinct functions related to the platform as a whole. We are working on a mix of local datacenter and cloud-based components. Our initial web applications are microservices based on Node.js and Python Flask microframeworks, using components such as the REST-compatible [Flask API](https://www.flaskapi.org/) to generate multi-format routes for Web access as well as an API for developers to use.
 
@@ -263,11 +295,13 @@ The initial architecture of the project had to quickly evolve through several de
 
 In the more distant future, our project should be able to move to another framework, another development environment, integrate components from a mix of environments. To this end it is important for us to have flexible and scalable cloud infrastructure and focus on standards. For this reason we are basing our deployment on cloud-scale containerization technologies like Frictionless Data, Linux and Docker.
 
+### Cloud infrastructure
+
 Our current production environment is a set of Linux virtual private servers (VPS) nodes, hosted in a Frankfurt datacenter by the UK based [Linode](https://linode.com). On these we run development and production application code, data science projects, deploy experimental and shared software packages. Public cloud-hosted databases are being managed for us securely by [84codes](https://www.84codes.com/), a reliable Swedish tech company. For sensitive data, static deployments and e-mail accounts, we use the services of [METANET](https://metanet.ch) - an established provider in Zürich. Our web-facing components are proxied and accelerated by [CloudFlare](http://cloudflare.com/).
 
-Going forward, we are evaluating various containerization and monitoring platforms, for example to improve the way we use and manage our [Docker](https://docker.com) containers. Next generation data science application are typically built using microservice frameworks and tightly orchestrated deployments with continuous integration. This is particularly key to scaling on-demand services like data acquisition and processing jobs. 
+Going forward, we are evaluating various containerization and monitoring platforms, for example to improve the way we use and manage our [Docker](https://docker.com) containers. Next generation data science application are typically built using microservice frameworks and tightly orchestrated deployments with continuous integration. This is particularly key to scaling on-demand services like data acquisition and processing jobs.
 
-### Data science ☂
+### Data science
 
 For work that is more involving, either in terms of the amounts of data involved, or to involve users and tools from various data science disciplines, we have based our data science work in Jupyter notebooks, which enables the output from tools like Julia and Pandas to be combined with Frictionless Data sources in the optimal way.
 
@@ -275,7 +309,7 @@ We started our development process on PostGIS and QGIS, two leading platforms fo
 
 An example of our approach to popularizing Data Science could be seen through our [presence at Criterion 2019](https://blog.datalets.ch/056/#tangiblecity), where we wanted to put "things" into the hands of visitors that were tangible and even analogue, rather than digital - yet still produced with the kind of spatial analysis and awareness of urban questions.
 
-### Integration capabilities 🌍
+### Integration capabilities
 
 The Frictionless Data standards detailed in previous sections can be complemented by a variety of connectors to breach gaps in the Web of Data. These include support for some of the following key data sharing ecosystems.
 
@@ -317,17 +351,18 @@ _"Enabling a longer-term functioning of the platform"._
 - Accordingly, a model can also be developed in which users (e.g. of mobile telephony or postal services) are involved in the monetization of their data. This could be done in the form of a partnership or with open source tools.
 - Client services are further development and regularized with help of a sales and support team.
 
-**2021 Further development**
+**2021+ Further development**
 
 _"Activating the potential in the evaluation of data"._
 
-- Data can be used to generate structural indices for the use of urban in this room.
+- Data is used to generate structural indices for urbanism work.
 - The indices can be marketed via user licenses or project work.
 - Participants ("cooperative members") are compensated for their contributions.
+- And much, much more!
 
 ---
 
-# Quotes and citations
+# Citations
 
 > _The tools currently available to policymakers, legislators, and courts were developed to oversee human decisionmakers and often fail when applied to computers instead. For example, how do you judge the intent of a piece of software? [...] We challenge the dominant position in the legal literature that transparency will solve these problems. Disclosure of source code is often neither necessary (because of alternative techniques from computer science) nor sufficient (because of the issues analyzing code) to demonstrate the fairness of a process._
 -- [Accountable Algorithms](https://scholarship.law.upenn.edu/penn_law_review/vol165/iss3/3/) (Joshua A. Kroll et al. 2017)
