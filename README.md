@@ -9,7 +9,7 @@ product@cividi.ch
 
 https://cividi.ch
 
-v0.11
+v0.12
 
 ---
 
@@ -17,7 +17,9 @@ v0.11
 
 - [Abstract](#Abstract)
 - [Who we are](#Who-we-are)
-- [(Hypo)theses](#Hypotheses)
+- [Context](#Context)
+- [Mission](#Mission)
+- [Hypotheses](#Hypotheses)
 - [Guiding principles](#Guiding-principles)
 - [Design strategy](#Design-strategy)
 - [Data architecture](#Data-architecture)
@@ -25,6 +27,12 @@ v0.11
 - [Citations](#Citations)
 
 <style type="text/css">h1 { page-break-before:always }</style>
+
+---
+
+<font size="300%">WHITEPAPER DRAFT</font>
+
+_For your personal review. Please send feedback to team@cividi.ch - via Slack - or 0435010155_
 
 ---
 
@@ -53,38 +61,37 @@ This is what we do, and we are **cividi**.
 ---
 
 # Context
+Our cities are environment, infrastructure, medium and format for our prosperous, culturally rich and comparatively safe lives. Over many hundreds, even thousands of years of urban development we learned how to organize cities into public and private spaces, build squares, roads, parks and buildings, or install laws, regulations and political processes to make them work.
 
-Our cities are environment, infrastructure, medium and format for our prosperous, culturally rich and comparatively safe lives.
+Cities are spatial syntax for the relationships that make up our culture and economy. We meet in cities to exchange gossip or share experiences, to trade ideas or goods. We are linked to our cities with our home and business addresses, established identities for conducting our civic and economic lives. Conceptually, the spaces, concerns and governance of cities are aligned.
 
-Over many hundreds, even thousands of years of urban development we learned how to organize cities into public and private spaces, build squares, roads, parks and buildings, or install laws, regulations and political processes to make them work. Cities are the spatial syntax for the relationships that make up our culture and economy. We meet in cities to exchange gossip or experiences, to trade ideas or goods. We are linked to our cities with our home or business address that establish our identity and let us conduct our civic and economic lives. At least ideally, spaces, concerns and governance are aligned.
+Digitalization introduces entirely new infrastructures, address protocols, algorithmic processes or services to urban spaces, many provided by private entities. The digital is a versatile, adaptable and powerful medium for relationships. Each relation is computationally addressed and trackable. This generates vast amounts of relational data – like stacks of used postal envelopes, piling up. Sifting through this data allows for analyzing past choices and predicting future ones. Increasingly data points have not only a time, but also a location. Analyzing them reveals functions and uses in space.
 
-Digitalization introduces entirely new infrastructures, address protocols, algorithmic processes or services to urban spaces, many provided by private entities. The digital is a versatile, adaptable and powerful syntax for relationships. Each relation is computationally addressed and hence trackable. This generates vast amounts of relational data – like stacks of used postal envelopes piling up. Sifting through this data allows for analyzing past choices and predicting future ones. Increasingly data points have not only a time, but also a location stamp. Analyzing them reveals functions and uses in space.
+The spatial syntax of cities is largely a public domain. The computational dimension of digital networks must be protected as well. We pay for connectivity and convenience by selling our choices – past and future.
 
-The spatial syntax of cities is largely a public domain. The computational syntax of digital networks is not. We pay for connectivity and convenience by selling our choices – past and future.
-
-Digitalization gives us great power and connectivity. But it also disrupts markets, multiplies identities, questions privacy, challenges sovereignty and splinters the public domain. Spaces, concerns and governance are drifting apart.
+Digitalization gives us great power and connectivity. It also disrupts markets, multiplies identities, questions privacy, challenges sovereignty and splinters the public domain. Spaces, concerns and governance are drifting apart.
 
 ## Mission
 
-Historically, those urban cultures seemed to have worked best that balanced top down control and private initiative, that relied on transparency, cooperation and a strong public domain. Today, when the urban age meets the digital, these virtues are to be renegotiated.
+cividi supports a cooperative development of our cities, settlements and landscapes by working towards a digitally enabled public domain. It realigns spaces, concerns and governance.
 
-Cividi supports a cooperative development of our cities, settlements and landscapes by working towards a digitally enabled public domain. It realigns spaces, concerns and governance.
+Historically, the urban cultures that seemed to have worked best have balanced top down control and private initiative. They have relied on transparency, cooperation and a strong public domain. Today, as the urban age meets the digital, these virtues are to be renegotiated.
 
 ### Spaces
 
-Cividi organizes data according to a standardized understanding of space, its relations and its dynamics.
+cividi organizes data according to a shared and constantly evolving understanding of space, its relations and dynamics.
 
 ### Concerns
 
-Cividi aggregates and visualizes data from heterogeneous sources and allows for the publication of user data and initiatives.
+cividi aggregates data from heterogeneous sources, that allows for the visualization and publication of aggregated data from urban users and initiatives.
 
 ### Governance
 
-Cividi supports participation by establishing access, identity and stake.
+cividi supports participation by supporting technologies to establish accessibility, authenticity, and proof of stake in urban data and initiatives.
 
 ---
 
-# (Hypo)theses
+# Hypotheses
 
 Three basic ideas are fundamental to this project, which help us to identify the target audience, and to focus our challenges on the longer timescale.
 
