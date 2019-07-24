@@ -9,7 +9,7 @@ product@cividi.ch
 
 https://cividi.ch
 
-v0.12
+v0.13
 
 ---
 
@@ -38,6 +38,8 @@ _For your personal review. Please send feedback to team@cividi.ch - via Slack - 
 
 # Abstract
 
+In order for planning and urban development to continue to enable sustainable cities worth living in, despite a growing population, increasing traffic and the politically demanded internal densification, they must become participative, evidence-based and smart. Digitalisation offers new possibilities for analysing and involving the population. In cooperation with partners from administration, academia and industry, Cividi creates the basis for the participatory development and better use of urban spaces and infrastructure instead of having to build expensive new ones.
+
 From the citizen's perspective, there is a growing awareness that relationships with the urban planning field should be more transparent, open, cooperative, actively managed and predictable. This is reflected in the dynamics of city planning and politics, concerned with ensuring citizen involvement. Participatory urbanism enables forward-thinking architects, planners, engineers and policymakers to work on data science problems together with the wider citizenry - generating shared insights into what truly makes a city tick, and legitimately addressing many of these core concerns.
 
 To enable this, new platforms are being built for organizations to connect to their stakeholders, bringing a fresh and transparent approach to negotiations, building a sustainable connection to customers around shared interests. Open source and web accessible tools are making it possible to overcome cost and digital literacy barriers. _Urbanists_ are citizens empowered by public data infrastructure, who are willing to consult information sources to form opinions and help to make better decisions about the future of their city.
@@ -50,6 +52,8 @@ This is what we do, and we are **cividi**.
 
 # Who we are
 
+The pioneering project **cividi**, supported by the innovation partner Engagement Migros, provides digital tools for the analogue city. It aims to make local concerns visible and to involve civil society in spatial planning. **cividi** is establishing a platform for the visualisation and exchange of data on the use of urban space. The platform works with data from authorities and companies, but also offers users the possibility to make their individual data available for social purposes. For this purpose, a cooperative model for use and exploitation is being developed.
+
 **cividi** is being launched by a world class urban science team, backed by founders with extensive backgrounds and wide-ranging network. We bring deep industry experience (architecture & urban systems, business development, data engineering), hold advanced degrees (ETH, Harvard, HSG, Newcastle), and the maturity to leverage our interdisciplinary mindsets for the success of a civil society initiative.
 
 * Viktória Molnár
@@ -61,6 +65,7 @@ This is what we do, and we are **cividi**.
 ---
 
 # Context
+
 Our cities are environment, infrastructure, medium and format for our prosperous, culturally rich and comparatively safe lives. Over many hundreds, even thousands of years of urban development we learned how to organize cities into public and private spaces, build squares, roads, parks and buildings, or install laws, regulations and political processes to make them work.
 
 Cities are spatial syntax for the relationships that make up our culture and economy. We meet in cities to exchange gossip or share experiences, to trade ideas or goods. We are linked to our cities with our home and business addresses, established identities for conducting our civic and economic lives. Conceptually, the spaces, concerns and governance of cities are aligned.
@@ -185,7 +190,7 @@ We will evaluate and decide on the use of a widely accessible mobile-first user 
 
 # Data architecture
 
-![](platform-birdseye.png)
+![](img/platform-birdseye.png)
 
 This diagram shows a high-level view of the platform architecture that is being developed on the basis of the experience of building our first products. Continuing to build upon our architectural foundation and working through requirements gathering and team-building phases to determine how the platform will be supported long term will be key to making the right decisions.  The following sections describe key concepts of our solution architecture, while next chapter (Frameworks) documents more specific platform components.
 
@@ -280,7 +285,7 @@ While we prefer open source environments like Python and open standards like CSV
 
 In a wider sense, we also see our technical infrastructure grouped around such factories, which are operating on various levels. Initially we will have singular customer engagements, and factories of various sophistication processing data for them. In the future, a factory-of-factories will aggregate the resulting data into the basis for new products and services. Our goal is to co-design an open factory-building process that can be repurposed for various community and 3rd party solutions.
 
-![](http://okfnlabs.org/img/posts/data-factory.png)
+![](img/data-factory.png)
 
 _Image from [Data Factory & DataFlows Introduction](http://okfnlabs.org/blog/2018/08/29/data-factory-data-flows-introduction.html) by Adam Kariv_
 
