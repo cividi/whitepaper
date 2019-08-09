@@ -11,6 +11,10 @@ https://cividi.ch
 
 v0.13
 
+<font size="300%">WHITEPAPER DRAFT</font>
+
+_For your personal review. Please send feedback to team@cividi.ch - via Slack - or 0435010155_
+
 ---
 
 /// contents
@@ -23,6 +27,7 @@ v0.13
 - [Guiding principles](#Guiding-principles)
 - [Design strategy](#Design-strategy)
 - [Data architecture](#Data-architecture)
+- [Tech architecture](#Tech-architecture)
 - [Roadmap](#Roadmap)
 - [Citations](#Citations)
 
@@ -30,15 +35,9 @@ v0.13
 
 ---
 
-<font size="300%">WHITEPAPER DRAFT</font>
-
-_For your personal review. Please send feedback to team@cividi.ch - via Slack - or 0435010155_
-
----
-
 # Abstract
 
-In order for planning and urban development to continue to enable sustainable cities worth living in, despite a growing population, increasing traffic and the politically demanded internal densification, they must become participative, evidence-based and smart. Digitalisation offers new possibilities for analysing and involving the population. In cooperation with partners from administration, academia and industry, Cividi creates the basis for the participatory development and better use of urban spaces and infrastructure instead of having to build expensive new ones.
+In order for planning and urban development to continue to enable sustainable cities worth living in, despite a growing population, increasing traffic and the politically demanded internal densification, they must become participative, evidence-based and smart. Digitalisation offers new possibilities for analysing and involving the population. In cooperation with partners from administration, academia and industry, **cividi** creates the basis for the participatory development and better use of urban spaces and infrastructure instead of having to build expensive new ones.
 
 From the citizen's perspective, there is a growing awareness that relationships with the urban planning field should be more transparent, open, cooperative, actively managed and predictable. This is reflected in the dynamics of city planning and politics, concerned with ensuring citizen involvement. Participatory urbanism enables forward-thinking architects, planners, engineers and policymakers to work on data science problems together with the wider citizenry - generating shared insights into what truly makes a city tick, and legitimately addressing many of these core concerns.
 
@@ -78,21 +77,21 @@ Digitalization gives us great power and connectivity. It also disrupts markets, 
 
 ## Mission
 
-cividi supports a cooperative development of our cities, settlements and landscapes by working towards a digitally enabled public domain. It realigns spaces, concerns and governance.
+**cividi** supports a cooperative development of our cities, settlements and landscapes by working towards a digitally enabled public domain. It realigns spaces, concerns and governance.
 
 Historically, the urban cultures that seemed to have worked best have balanced top down control and private initiative. They have relied on transparency, cooperation and a strong public domain. Today, as the urban age meets the digital, these virtues are to be renegotiated.
 
 ### Spaces
 
-cividi organizes data according to a shared and constantly evolving understanding of space, its relations and dynamics.
+**cividi** organizes data according to a shared and constantly evolving understanding of space, its relations and dynamics.
 
 ### Concerns
 
-cividi aggregates data from heterogeneous sources, that allows for the visualization and publication of aggregated data from urban users and initiatives.
+**cividi** aggregates data from heterogeneous sources, that allows for the visualization and publication of aggregated data from urban users and initiatives.
 
 ### Governance
 
-cividi supports participation by supporting technologies to establish accessibility, authenticity, and proof of stake in urban data and initiatives.
+**cividi** supports participation by supporting technologies to establish accessibility, authenticity, and proof of stake in urban data and initiatives.
 
 ---
 
@@ -192,13 +191,15 @@ We will evaluate and decide on the use of a widely accessible mobile-first user 
 
 ![](img/platform-birdseye.png)
 
-This diagram shows a high-level view of the platform architecture that is being developed on the basis of the experience of building our first products. Continuing to build upon our architectural foundation and working through requirements gathering and team-building phases to determine how the platform will be supported long term will be key to making the right decisions.  The following sections describe key concepts of our solution architecture, while next chapter (Frameworks) documents more specific platform components.
+This diagram shows a high-level view of the data architecture that we are developing for our first products. The following sections describe key concepts of our approach, while next chapter ([Tech architecture](#tech-architecture)) documents more specific platform components.
 
 ## Geospatial data standards
 
-We wish to build on top of the efforts to deploy open data portals and create data sharing ecosystems around the world. Closest to us are those of the Swiss federal government - [opendata.swiss](https://opendata.swiss), which also represents the Swiss cantons, various government organizations, and cities such as the [City of Zürich](https://data.stadt-zuerich.ch) and other forward-thinking communes. Many such portals are based on the [CKAN software](https://ckan.org) from Open Knowledge. CKAN provides a federated model for data exchange, whereby metadata published on local portals can be promoted and consistently represented on regional, national and international portals.
+We are building on top of existing efforts to deploy standards-based **Open Data Portals**, and create data sharing ecosystems around the world. Closest to us are those of the Swiss Federal government - [opendata.swiss](https://opendata.swiss), which also represents the Swiss cantons, various government organizations, and cities such as the [City of Zürich](https://data.stadt-zuerich.ch) and other forward-thinking communes. These portals include geospatial datasets, which are usually also accessible through "map portals" like [geo.admin.ch](https://geo.admin.ch) from Swisstopo, which has been a champion of open data standards and Open Government Data for many years.
 
-Going beyond federated open data, Frictionless Data builds on the principles of the Web of Data with a set of containerization formats for any kind of data to enable simple data publication, transport, and consumption. A community around these standards is building platform agnostic interoperability tools. The frictionless ecosystem is a middle ground between centralized/siloed open data and more widely distributed (Linked Data, IPFS, Blockchain or otherwise transmitted) concepts for data exchange. It prevents great cost benefits through easier integration and more consistent interpretation of data schema and sourcing.
+Many open data portals are based on the [CKAN software](https://ckan.org) from [Open Knowledge](https://okfn.org). CKAN provides a federated model for data exchange, whereby metadata published on local portals can be promoted and consistently represented on regional, national and international portals. Going beyond federated open data, **Frictionless Data** builds on the principles of the Web of Data with a set of containerization formats for any kind of data to enable simple data publication, transport, and consumption. 
+
+A community around these standards is building platform agnostic interoperability tools. The frictionless ecosystem can be thought of as a middle ground, enabling interoperatbility between more traditional (centralized, siloed, firewalled), ontologically linked (see [project LINDAS](https://lindas-data.ch/indexEN.html) and [Semantic Web](https://www.w3.org/standards/semanticweb/data)), and cryptographically distributed ([dat://](https://dat.foundation/), [IPFS](https://de.wikipedia.org/wiki/InterPlanetary_File_System), [The Graph](https://thegraph.com/)) concepts for data exchange. It prevents great cost benefits through easier integration and more consistent interpretation of data schema and sourcing.
 
 We are inspired by the principles from the [frictionlessdata.io](http://frictionlessdata.io/specs/) project, excerpted here:
 
@@ -208,6 +209,9 @@ We are inspired by the principles from the [frictionlessdata.io](http://friction
 - **Open:** Anyone should be able to freely and openly use and reuse what we build. Our community is open to everyone.
 - **Existing Software:** Integrate as easily as possible with existing software both by building integrations and designing for direct use – for example we like CSV because everyone has a tool that can access CSV.
 - **Simple, Lightweight:** Add the minimum, do the least required, keep it simple. For example, use the most basic formats, require only the most essential metadata, data should have nothing extraneous.
+
+
+## Data packages
 
 A _Data Package_ is a simple way of “packaging” up and describing data so that it can be easily shared and used. You can imagine it as collection of data and it's meta-data (`datapackage.json`), usually covering some concrete topic Eg: "Gold Prices" or "Population Growth Rate In My country" etc. Each Data Package may have zero or more resources and one or more versions.
 
@@ -333,6 +337,26 @@ The Frictionless Data standards detailed in previous sections can be complemente
 We have evaluated integration with a variety of mapping toolkits including the the OpenStreetMap-based [Mapbox platform](https://mapbox.com), OpenLayers, Tangram, Kepler, etc., to create interactive, high quality renderings of our data science outputs. It is important to us that projects we do are not constrained by a single form of output, that the data could be reinterpreted in diverse ways, not only as 2D maps but also as 3D renderings, simple charts, or even tangible objects.
 
 Beyond compatibility with mapping platforms, we need to ensure that programmatic access to our APIs is a gateway to very different uses of our platform. Early experiences with platforms like Open-DAI, Pelias, Geoplatform and Stae have helped us evaluate the implications and challenges of successfully opening up our services to agents and algorithms from third parties.
+
+---
+
+# Tech architecture
+
+Based on the data architecture described above, we have started implementing parts of the solution for an MVP with an initial open source technical architecture described here.
+
+![Software architecture diagram](img/arch-sky.png)
+
+At the "bird's eye" level, we are piping various data source into a collaboration environment which provides us with tools to explore data, and automate the processing of it with sets of open algorithms. Through an API, the data is interfaced into our own frontends, such as "Smart Use Labs" or the "Gemeindescan" product, as well as made available for reuse by third-party applications, for monitoring or open data publication efforts.
+
+![Software architecture diagram](img/arch-floor.png)
+
+Going one step further down, at the "floor level" you can see some of the main components we rely on, for example web maps and REST interfaces provide us with functionality essential to our platforms. Our collaboration tools include content management, workflow, and communications components. We use [Data Packages](#data-packages) as an interface with the pipeline components, such as Frictionless Data tools, geographical (GIS) software components, and modules to interface with external APIs and linked open data (LOD) stores. The data infrastructure we currently rely on allows data harvesting and uploads through a simple interface built into our administrative backend.
+
+![Software architecture diagram](img/arch-lobby.png)
+
+At the "lobby level" we show some specific platforms and tools that we have deployed at time of writing. For the web frontends we are using [Vue.js](https://vuejs.org/), [Mapbox](https://mapbox.org/) and [Cloudflare](https://cloudflare.github.io/). Our interface APIs are built using [Flask](https://flask-restful.readthedocs.io/en/latest/) and [GraphQL](https://graphql.org/) via [Gridsome](https://gridsome.org/). We are updating content through Continuous Integration ([Travis](https://travis-ci.org/) and [Zeit](https://zeit.co/)), using headless content management and bots on our chat platforms ([Slack](https://slack.com)). To work on data pipelines we use [Jupyter](https://jupyter.org/) platforms with R, Python and Julia scripts interfacing through libraries like [Geopandas](http://geopandas.org/) to our spatial data servers ([PostGIS](https://postgis.net/)) and open data portals ([CKAN](https://ckan.org), [DataHub](https://datahub.io), [Wikidata](https://wikidata.org), [OpenStreetMap](https://osm.ch)). For persisting our data pipelines we are using cloud platforms like [S3](https://aws.amazon.com/de/s3/) and orchestration tools like [Celery](http://www.celeryproject.org/).
+
+As mentioned above, this reprents an explorative state of technical development and is likely to change as development requirements are refined.
 
 ---
 
